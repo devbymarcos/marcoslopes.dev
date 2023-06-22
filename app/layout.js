@@ -1,14 +1,14 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Marcos Lopes developer",
-  description: "Aqui apresento meu trabalhos realizados",
+  title: "Marcos Lopes",
+  description: "Ola você chegou em meu site pessoal veja meus trabalhos",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-Br">
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
