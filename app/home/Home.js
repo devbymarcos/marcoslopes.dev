@@ -19,7 +19,7 @@ export default function Home() {
           className={`${source.className} text-white text-[28px] w-[765px] text-center`}
         >
           Um desenvolvedor Web focado em{" "}
-          <span className="text-rose-500 font-bold">Front- end</span>,
+          <span className="text-rose-500 font-bold ">Front- end</span>,
           construindo o Frontend de sites e aplicativos da Web pensando no
           sucesso do produto geral
         </p>
