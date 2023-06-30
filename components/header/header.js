@@ -4,13 +4,12 @@ import { menuData } from "../../app/menu-data";
 
 export default function Header() {
   return (
-    <header className="h-24 bg-color-secondary flex justify-between items-center pl-10 pr-10">
+    <header className="h-24 bg-color-secondary flex justify-between fixed w-full items-center pl-10 pr-10">
       <Link href="/#" className="flex justify-between gap-4 items-center ">
-        <div className="rounded-full overflow-hidden h-14 w-14">
+        <div className="rounded-full overflow-hidden relative  h-14 w-14">
           <Image
-            className="rounded-full"
-            width={50}
-            height={50}
+            className="object-cover"
+            fill
             src="/images/marcos.jpg"
             alt="avatar"
           />
