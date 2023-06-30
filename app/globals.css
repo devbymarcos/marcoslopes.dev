@@ -10,3 +10,10 @@ html {
   max-width: 1250px;
   margin: 0 auto 6rem auto;
 }
+
+/* PROJETOS*/
+
+.navigation {
+  transform: translateY(-5px);
+  color: #73f58f;
+}
