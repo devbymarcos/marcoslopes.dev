@@ -1,5 +1,5 @@
 import { Source_Sans_Pro } from "next/font/google";
-import Mouse from "./Mouse";
+import Mouse from "../../components/mouse/Mouse";
 
 const source = Source_Sans_Pro({
   weight: ["400", "700"],
@@ -9,7 +9,10 @@ const source = Source_Sans_Pro({
 export default function Home() {
   return (
     <>
-      <section className="flex justify-center flex-col items-center h-screen">
+      <section
+        id=""
+        className=" container  flex justify-center flex-col items-center h-screen"
+      >
         <h1
           className={`text-white text-[62px] font-black uppercase text-center ${source.className}`}
         >
