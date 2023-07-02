@@ -21,7 +21,7 @@ export default function About() {
           habilidades atuais principalmente em termos de programação e
           tecnologia
         </p>
-        <div className="flex gap-32 mt-24 items-start">
+        <div className="flex flex-col md:flex-row md gap-32 mt-24 items-start">
           <MyDesc />
           <Skills />
         </div>
