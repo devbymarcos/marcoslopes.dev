@@ -16,7 +16,7 @@ export default function Header() {
         </div>
         <p className="font-poppins font-bold text-white">MARCOSLOPES.DEV</p>
       </Link>
-      <nav>
+      <nav className="hidden md:block">
         <ul className="flex justify-center items-center gap-16">
           {menuData.map((navItem) => {
             return (
