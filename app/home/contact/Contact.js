@@ -9,15 +9,15 @@ export function Contact() {
 
   return (
     <>
-      <section id="contato" className="container pt-28">
+      <section id="contato" className="container pt-28 px-2">
         <div className="w-full mb-28 text-center text-white">
           <h2 className=" text-5xl mb-6 font-bold">CONTATO</h2>
-          <p className="text-xl px-[16%]">
+          <p className="text-xl md:px-[16%]">
             Sinta-se à vontade para entrar em contato comigo enviando o
             formulário abaixo e retornarei o mais breve possível possível
           </p>
         </div>
-        <form className="w-[832px] mx-auto rounded border-t-2 bg-color-secondary p-10 flex flex-col">
+        <form className="md:w-[832px] mx-auto rounded border-t-2 bg-color-secondary p-10 flex flex-col">
           <Input
             label="Nome"
             type="text"

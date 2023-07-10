@@ -4,13 +4,13 @@ import Card from "./Card";
 export default function Projects() {
   return (
     <>
-      <section id="projetos" className="h-screen container  pt-28">
+      <section id="projetos" className=" h-auto md:h-screen container  pt-28">
         <h1
-          className={`text-white  uppercase text-[41px] font-bold text-center mb-[23px]`}
+          className={`text-white  uppercase text-[41px] font-bold text-center mb-[40px]`}
         >
           PROJETOS
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-11 px-2">
           <Card
             title="Clínica Cmape"
             urlImg="/images/cmape.gif"
@@ -24,7 +24,7 @@ export default function Projects() {
             urlLink="/dbmcode"
           ></Card>
           <Card
-            title="Gerador de senha url"
+            title="Gerador de senhas "
             urlImg="/images/createpasswd.gif"
             alt="gif para apresentar o gerador de senha"
             urlLink="/createpasswd"

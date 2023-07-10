@@ -14,12 +14,12 @@ export default function Home() {
         className=" container  flex justify-center flex-col items-center h-screen"
       >
         <h1
-          className={`text-white text-[62px] font-black uppercase text-center ${source.className}`}
+          className={`text-white text-5xl md:text-[62px] font-black uppercase text-center ${source.className}`}
         >
           Olá, me chamo Marcos
         </h1>
         <p
-          className={`${source.className} text-white text-[28px] w-[765px] text-center`}
+          className={`${source.className} text-white text-lg md:text-[28px] md:w-[765px] text-center`}
         >
           Um desenvolvedor JavaScript atualmente focado em{" "}
           <span className="text-rose-500 font-bold ">Front-end</span>,

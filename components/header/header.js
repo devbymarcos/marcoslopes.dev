@@ -22,7 +22,7 @@ export default function Header() {
           height={18}
         />
       </Link>
-      <nav>
+      <nav className="hidden md:block">
         <ul className="flex justify-center items-center gap-16">
           {menuData.map((navItem) => {
             return (
