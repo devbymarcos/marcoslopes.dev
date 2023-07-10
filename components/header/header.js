@@ -14,15 +14,19 @@ export default function Header() {
             alt="avatar"
           />
         </div>
-        <p className="font-poppins font-bold text-2xl text-white">
-          devbymarcos
-        </p>
+
+        <Image
+          src="/images/devbymarcos_light.png"
+          alt="logo devbymarcos"
+          width={154}
+          height={18}
+        />
       </Link>
       <nav>
         <ul className="flex justify-center items-center gap-16">
           {menuData.map((navItem) => {
             return (
-              <li>
+              <li key={navItem.title}>
                 <Link className="text-white" href={navItem.path}>
                   {navItem.title}
                 </Link>
