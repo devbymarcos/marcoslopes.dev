@@ -27,7 +27,7 @@ export default function Header() {
           {menuData.map((navItem) => {
             return (
               <li key={navItem.title}>
-                <Link className="text-white" href={navItem.path}>
+                <Link className="text-white " href={navItem.path}>
                   {navItem.title}
                 </Link>
               </li>

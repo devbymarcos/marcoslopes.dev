@@ -32,7 +32,7 @@ export default function Projects() {
         </div>
         <div className="my-12 text-center">
           <Link
-            className="py-4 px-6 bg-[#7843E9] text-white rounded-md"
+            className="py-4 px-6 bg-[#7843E9] text-white font-bold   rounded-md"
             href="/projetos"
           >
             Ver mais projetos
