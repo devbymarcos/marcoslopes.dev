@@ -1,5 +1,4 @@
-"use client";
-
+import Link from "next/link";
 import Card from "./Card";
 
 export default function Projects() {
@@ -11,14 +10,34 @@ export default function Projects() {
         >
           PROJETOS
         </h1>
-        <Card title="Clínica Cmape" urlImg="/images/cmape.png">
-          CAMPE é um centro médico focado em o tratamento da obesidade,
-          emagrecimento saudável, hipertrofia muscular, prevenção de doenças
-          crônicas e prevalentes (como diabetes , hipertensão arterial ,
-          dislipidemia e outras ), longevidade e envelhecimento saudável e
-          nutrologia esportiva, com o objetivo de promover saúde, qualidade de
-          vida, energia e performance aos nossos pacientes.
-        </Card>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <Card
+            title="Clínica Cmape"
+            urlImg="/images/cmape.gif"
+            alt="gif para site cmape"
+            urlLink="/cmape"
+          ></Card>
+          <Card
+            title="Site dBmcode"
+            urlImg="/images/dbmcode.gif"
+            alt="gif para site dbmcode"
+            urlLink="/dbmcode"
+          ></Card>
+          <Card
+            title="Gerador de senha url"
+            urlImg="/images/createpasswd.gif"
+            alt="gif para apresentar o gerador de senha"
+            urlLink="/createpasswd"
+          ></Card>
+        </div>
+        <div className="my-12 text-center">
+          <Link
+            className="py-4 px-6 bg-[#7843E9] text-white rounded-md"
+            href="/projetos"
+          >
+            Ver mais projetos
+          </Link>
+        </div>
       </section>
     </>
   );

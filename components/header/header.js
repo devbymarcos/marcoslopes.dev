@@ -14,7 +14,9 @@ export default function Header() {
             alt="avatar"
           />
         </div>
-        <p className="font-poppins font-bold text-white">MARCOSLOPES.DEV</p>
+        <p className="font-poppins font-bold text-2xl text-white">
+          devbymarcos
+        </p>
       </Link>
       <nav>
         <ul className="flex justify-center items-center gap-16">
