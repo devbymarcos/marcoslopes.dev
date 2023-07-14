@@ -19,12 +19,11 @@ export default function Home() {
           Olá, me chamo Marcos
         </h1>
         <p
-          className={`${source.className} text-white text-lg md:text-[28px] md:w-[765px] text-center`}
+          className={`${source.className} text-white text-lg md:text-[28px] md:w-[765px] text-center my-3 leading-10`}
         >
           Um desenvolvedor JavaScript atualmente focado em{" "}
-          <span className="text-rose-500 font-bold ">Front-end</span>,
-          construindo o Frontend de sites e aplicativos da Web pensando no
-          sucesso do produto geral
+          <span className="text-rose-500 font-bold  ">Front-end</span>,
+          construindo o Frontend de sites e aplicativos da Web
         </p>
         <Mouse />
       </section>
