@@ -35,6 +35,7 @@ export default function Header() {
                 <Link
                   className="text-white hover:text-orange-500 font-bold py-4 px-5 "
                   href={navItem.path}
+                  target={navItem.props ? navItem.props.target : ""}
                 >
                   {navItem.title}
                 </Link>

@@ -18,5 +18,6 @@ export const menuData = [
   {
     title: "< CURSO FULLSTACK />",
     path: "https://dbmcode.com/dev-initial",
+    props: { target: "_blank" },
   },
 ];
