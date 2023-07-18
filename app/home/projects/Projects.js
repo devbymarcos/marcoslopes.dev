@@ -15,19 +15,19 @@ export default function Projects() {
             title="Clínica Cmape"
             urlImg="/images/cmape.gif"
             alt="gif para site cmape"
-            urlLink="/cmape"
+            urlLink="/projetos/cmape"
           ></Card>
           <Card
             title="Site dBmcode"
             urlImg="/images/dbmcode.gif"
             alt="gif para site dbmcode"
-            urlLink="/dbmcode"
+            urlLink="/projetos/dbmcode"
           ></Card>
           <Card
             title="Gerador de senhas "
             urlImg="/images/createpasswd.gif"
             alt="gif para apresentar o gerador de senha"
-            urlLink="/createpasswd"
+            urlLink="/projetos/createpasswd"
           ></Card>
         </div>
         <div className="my-12 text-center">
