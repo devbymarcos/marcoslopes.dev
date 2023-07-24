@@ -15,6 +15,12 @@ export function Contact() {
   async function postContact(e) {
     e.preventDefault();
 
+    let dataEmail = {
+      name: name,
+      email: email,
+      message: message,
+    };
+
     let dataRules = {
       name: "required",
       email: "required|email",
