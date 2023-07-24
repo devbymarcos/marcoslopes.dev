@@ -69,6 +69,10 @@ export function Contact() {
             message: json.message,
             active: true,
           });
+
+          setName("");
+          setEmail("");
+          setMessage("");
         }
       } catch (error) {
         console.log(error);
@@ -78,7 +82,7 @@ export function Contact() {
     } else {
       setAlertObj({
         type: "error",
-        message: "Verifique os dados: Nome, email, mensagem",
+        message: "Oooops !! Verifique os dados: Nome, email, mensagem",
         active: true,
       });
     }
