@@ -16,7 +16,7 @@
     "next": "13.4.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "validatorjs": "^3.22.1"
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

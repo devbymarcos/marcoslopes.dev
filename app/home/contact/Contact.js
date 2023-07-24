@@ -3,7 +3,7 @@ import Spinner from "@/components/spinner/Spinner";
 import { Input, TextArea } from "./Input";
 import { useState } from "react";
 import { useAlert, Alert } from "@/components/alert/Alert";
-import Validator from "validatorjs";
+import { z } from "zod";
 
 export function Contact() {
   const [name, setName] = useState("");
@@ -11,34 +11,52 @@ export function Contact() {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const { alertObj, setAlertObj } = useAlert();
+  const [borderStyleName, setBorderStyleName] = useState("");
+  const [borderStyleMessage, setBorderStyleMessage] = useState("");
+  const [borderStyleEmail, setBorderStyleEmail] = useState("");
 
   async function postContact(e) {
     e.preventDefault();
 
-    let dataEmail = {
+    const schema = z.object({
+      name: z.string().min(5, " Prencha o campo name"),
+      email: z.string().email("digite um email valido"),
+      message: z.string().min(10, "digite sua mensagem"),
+    });
+
+    const result = schema.safeParse({
       name: name,
       email: email,
       message: message,
-    };
+    });
 
-    let dataRules = {
-      name: "required",
-      email: "required|email",
-      message: "required",
-    };
+    setBorderStyleEmail("");
+    setBorderStyleMessage("");
+    setBorderStyleName("");
 
-    let validation = new Validator(dataEmail, dataRules);
+    if (!result.success) {
+      const resultObj = JSON.parse(result.error);
+      for (let i = 0; i < resultObj.length; i++) {
+        if (resultObj[i].path[0] === "name") {
+          setBorderStyleName("!border-red-500 !border-2 ");
+        } else if (resultObj[i].path[0] === "email") {
+          setBorderStyleEmail("!border-red-500 !border-2 ");
+        } else if (resultObj[i].path[0] === "message") {
+          setBorderStyleMessage("!border-red-500 !border-2 ");
+        }
+      }
+    }
 
-    if (validation.passes()) {
+    if (result.success) {
       const options = {
         method: "POST",
         headers: {
           "Content-type": "application/json",
         },
         body: JSON.stringify({
-          name: name,
-          email: email,
-          message: message,
+          name: result.data.name,
+          email: result.data.email,
+          message: result.data.message,
         }),
       };
       try {
@@ -58,7 +76,6 @@ export function Contact() {
         setLoading(false);
       }
     } else {
-      console.log(validation.passes());
       setAlertObj({
         type: "error",
         message: "Verifique os dados: Nome, email, mensagem",
@@ -79,7 +96,7 @@ export function Contact() {
             formulário abaixo e retornarei o mais breve possível possível
           </p>
         </div>
-        <form className="md:w-[832px] mx-auto rounded border-t-2 bg-color-secondary p-10 flex flex-col">
+        <form className="md:w-[832px] mx-auto rounded border-t-2  bg-color-secondary p-10 flex flex-col">
           <Input
             label="Nome"
             type="text"
@@ -87,6 +104,7 @@ export function Contact() {
             onChange={(e) => {
               setName(e.target.value);
             }}
+            classIf={borderStyleName}
           />
 
           <Input
@@ -96,6 +114,7 @@ export function Contact() {
             onChange={(e) => {
               setEmail(e.target.value);
             }}
+            classIf={borderStyleEmail}
           />
           <TextArea
             label="Menssagem"
@@ -103,6 +122,7 @@ export function Contact() {
               setMessage(e.target.value);
             }}
             value={message}
+            classIf={borderStyleMessage}
           />
 
           <div>
