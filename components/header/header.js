@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 
 export default function Header() {
   const pathname = usePathname();
-  console.log(pathname);
 
   return (
     <header className="h-24 bg-color-secondary z-40 flex justify-between fixed w-full items-center pl-10 pr-10">

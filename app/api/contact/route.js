@@ -30,12 +30,12 @@ export async function POST(request) {
 
   if (send.statusCode === 202) {
     return NextResponse.json({
-      message: "Ok !! Seu contato foi enviado com sucesso",
+      message: "Ok! seu contato foi enviado com sucesso",
       type: "success",
     });
   } else {
     return NextResponse.json({
-      message: "Opps algo deu errado",
+      message: "Opps!! algo deu errado",
       type: "error",
     });
   }

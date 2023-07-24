@@ -2,7 +2,8 @@
 import Spinner from "@/components/spinner/Spinner";
 import { Input, TextArea } from "./Input";
 import { useState } from "react";
-import { useAlert, Alert } from "@/hooks/useAlert";
+import { useAlert, Alert } from "@/components/alert/Alert";
+import Validator from "validatorjs";
 
 export function Contact() {
   const [name, setName] = useState("");
@@ -13,39 +14,57 @@ export function Contact() {
 
   async function postContact(e) {
     e.preventDefault();
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify({
-        name: name,
-        email: email,
-        message: message,
-      }),
+
+    let dataRules = {
+      name: "required",
+      email: "required|email",
+      message: "required",
     };
-    try {
-      setLoading(true);
-      const response = await fetch("/api/contact", options);
-      const json = await response.json();
-      if (response.ok === true) {
-        setAlertObj({
-          type: "success",
-          message: json.message,
-          active: true,
-        });
+
+    let validation = new Validator(dataEmail, dataRules);
+
+    if (validation.passes()) {
+      const options = {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          message: message,
+        }),
+      };
+      try {
+        setLoading(true);
+        const response = await fetch("/api/contact", options);
+        const json = await response.json();
+        if (response.ok === true) {
+          setAlertObj({
+            type: json.type,
+            message: json.message,
+            active: true,
+          });
+        }
+      } catch (error) {
+        console.log(error);
+      } finally {
+        setLoading(false);
       }
-    } catch (error) {
-      console.log(error);
-    } finally {
-      setLoading(false);
+    } else {
+      console.log(validation.passes());
+      setAlertObj({
+        type: "error",
+        message: "Verifique os dados: Nome, email, mensagem",
+        active: true,
+      });
     }
   }
 
   return (
     <>
-      <Alert alertObj={alertObj} />
       <Spinner active={loading} />
+      <Alert alertObj={alertObj} />
       <section id="contato" className="container pt-28 px-2">
         <div className="w-full mb-28 text-center text-white">
           <h2 className=" text-5xl mb-6 font-bold">CONTATO</h2>
@@ -66,7 +85,7 @@ export function Contact() {
 
           <Input
             label="Email"
-            type="text"
+            type="email"
             value={email}
             onChange={(e) => {
               setEmail(e.target.value);

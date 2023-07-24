@@ -10,11 +10,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        "color-primary": "#0F0F0F",
-        "color-secondary": "#1c1b1b",
-        "color-border": "#3C3C3C",
-      },
       keyframes: {
         move: {
           "0%": { transform: "translateY(-18px)" },
@@ -34,6 +29,11 @@ module.exports = {
         "up-down": "move 1.2s infinite",
         "open-alert": "open 0.2s linear",
         "frame-time": "time 1s linear",
+      },
+      colors: {
+        "color-primary": "#0F0F0F",
+        "color-secondary": "#1c1b1b",
+        "color-border": "#3C3C3C",
       },
     },
   },

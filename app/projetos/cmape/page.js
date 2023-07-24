@@ -26,7 +26,7 @@ export default function Cmape() {
         <article className="text-white">
           <h2 className="text-4xl text-white mb-4">Descrição</h2>
           <p className="text-2xl">
-            Web site com painel administrativo privado personalizado. <br />
+            Web site com painel administrativo personalizado. <br />
             Carregamento de fotos, posts, descrições, titulos.
           </p>
           <Link
