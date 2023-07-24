@@ -9,7 +9,7 @@ export default function Header() {
   console.log(pathname);
 
   return (
-    <header className="h-24 bg-color-secondary z-50 flex justify-between fixed w-full items-center pl-10 pr-10">
+    <header className="h-24 bg-color-secondary z-40 flex justify-between fixed w-full items-center pl-10 pr-10">
       <Link href="/#" className="flex justify-between gap-4 items-center ">
         <div className="rounded-full overflow-hidden relative  h-14 w-14">
           <Image

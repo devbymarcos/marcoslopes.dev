@@ -15,16 +15,25 @@ module.exports = {
         "color-secondary": "#1c1b1b",
         "color-border": "#3C3C3C",
       },
-
       keyframes: {
         move: {
           "0%": { transform: "translateY(-18px)" },
           "60%": { opacity: ".5" },
           "100%": { transform: "translateY(10px)", opacity: "0" },
         },
+        open: {
+          "0%": { transform: "translateY(-10px)", opacity: "0" },
+          "100%": { transform: "translateY(0px)", opacity: "1" },
+        },
+        time: {
+          "0%": { width: "0" },
+          "100%": { width: "100%" },
+        },
       },
       animation: {
-        updown: "move 1.2s infinite",
+        "up-down": "move 1.2s infinite",
+        "open-alert": "open 0.2s linear",
+        "frame-time": "time 1s linear",
       },
     },
   },

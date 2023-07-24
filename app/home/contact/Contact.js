@@ -1,11 +1,15 @@
 "use client";
+import Spinner from "@/components/spinner/Spinner";
 import { Input, TextArea } from "./Input";
 import { useState } from "react";
+import { useAlert, Alert } from "@/hooks/useAlert";
 
 export function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+  const { alertObj, setAlertObj } = useAlert();
 
   async function postContact(e) {
     e.preventDefault();
@@ -20,14 +24,28 @@ export function Contact() {
         message: message,
       }),
     };
-
-    const response = await fetch("/api/contact", options);
-    const json = await response.json();
-    console.log(json);
+    try {
+      setLoading(true);
+      const response = await fetch("/api/contact", options);
+      const json = await response.json();
+      if (response.ok === true) {
+        setAlertObj({
+          type: "success",
+          message: json.message,
+          active: true,
+        });
+      }
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
     <>
+      <Alert alertObj={alertObj} />
+      <Spinner active={loading} />
       <section id="contato" className="container pt-28 px-2">
         <div className="w-full mb-28 text-center text-white">
           <h2 className=" text-5xl mb-6 font-bold">CONTATO</h2>
