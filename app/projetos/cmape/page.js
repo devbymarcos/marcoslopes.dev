@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-export default function () {
+export default function Cmape() {
   return (
     <>
       <section className="container pt-24">
