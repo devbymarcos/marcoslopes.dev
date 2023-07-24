@@ -7,6 +7,25 @@ export function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  async function postContact(e) {
+    e.preventDefault();
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        message: message,
+      }),
+    };
+
+    const response = await fetch("/api/contact", options);
+    const json = await response.json();
+    console.log(json);
+  }
+
   return (
     <>
       <section id="contato" className="container pt-28 px-2">
@@ -44,7 +63,10 @@ export function Contact() {
           />
 
           <div>
-            <button className="py-4 px-6 bg-[#7843E9] text-white font-bold   rounded-md">
+            <button
+              onClick={postContact}
+              className="py-4 px-6 bg-[#7843E9] text-white font-bold   rounded-md"
+            >
               Enviar
             </button>
           </div>

@@ -31,7 +31,7 @@ export default function () {
           </p>
           <Link
             className="bg-sky-600 my-12 p-3 inline-block rounded-md"
-            href="http://www.cmape.com.br"
+            href="https://www.cmape.com.br"
             target="_bank"
           >
             Acessar

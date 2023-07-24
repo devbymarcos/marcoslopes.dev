@@ -21,7 +21,7 @@ export default function Header() {
         </div>
 
         <Image
-          src="/images/devbymarcos_light.png"
+          src="/images/marcoslopes-dev.png"
           alt="logo devbymarcos"
           width={154}
           height={18}

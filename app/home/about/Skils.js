@@ -7,7 +7,6 @@ export default function Skills() {
     "Nextjs",
     "Nodejs",
     "MYSQL",
-    "PHP",
     "Git",
     "GitHub",
     "Figma",
