@@ -11,7 +11,12 @@ export default function Card({ title, urlImg, alt, urlLink, category }) {
         className="hover:-translate-y-3 transition-all justify-self-auto"
       >
         <div className="w-full h-[270px] overflow-hidden relative rounded-sm">
-          <Image className="object-cover w-full " src={urlImg} alt={alt} fill />
+          <Image
+            className=" object-contain w-full "
+            src={urlImg}
+            alt={alt}
+            fill
+          />
         </div>
         <div className="my-5 text-center  text-[30px]">
           <h2 className={` text-white  `}>{title}</h2>

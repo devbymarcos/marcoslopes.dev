@@ -54,14 +54,14 @@ export default function Projetos() {
             ></Card>
             <Card
               title="Descubra a palavra"
-              urlImg="/images/typewriter.gif"
+              urlImg="/images/guess-word.gif"
               alt="gif para apresentar efeito de digitação"
               urlLink="/projetos/typewriter"
               category="utilities"
             ></Card>
             <Card
               title="Wallet Control"
-              urlImg="/images/typewriter.gif"
+              urlImg="/images/wallet-control.gif"
               alt="gif para apresentar efeito de digitação"
               urlLink="/projetos/typewriter"
               category="utilities"
