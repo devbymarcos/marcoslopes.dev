@@ -2,11 +2,11 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function CardCmape({ title, urlImg, alt, urlLink }) {
+export default function Card({ title, urlImg, alt, urlLink, category }) {
   return (
     <>
       <Link
-        id="cmape"
+        data-category={category}
         href={urlLink}
         className="hover:-translate-y-3 transition-all justify-self-auto"
       >

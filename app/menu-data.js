@@ -9,15 +9,10 @@ export const menuData = [
   },
   {
     title: "PROJETOS",
-    path: "/#projetos",
+    path: "/projetos",
   },
   {
     title: "CONTATO",
     path: "/#contato",
-  },
-  {
-    title: "< CURSO FULLSTACK />",
-    path: "https://dbmcode.com/dev-initial",
-    props: { target: "_blank" },
   },
 ];

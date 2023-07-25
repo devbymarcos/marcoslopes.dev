@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Card from "./Card";
+import Card from "@/components/CardLink/Card";
 
 export default function Projects() {
   return (
