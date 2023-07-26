@@ -1,5 +1,11 @@
+import BtnLinkFooterPage from "@/components/footer-page/BtnLinkFooterPage";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata = {
+  title: "Wallet Control | Projeto para Estudo",
+  description: "Projeto desenvolvido para  estudar a tecnologia",
+};
 export default function WalletControl() {
   return (
     <>
@@ -36,13 +42,9 @@ export default function WalletControl() {
             Wallet Control é um sistema de controle financeiro pessoal.Você
             criar uma carteira e gerencia todos o resto com base nessa carteira
           </p>
-          <Link
-            className="bg-sky-600 my-12 p-3 inline-block rounded-md"
-            href="/projetos/wallet-control"
-            target="_bank"
-          >
+          <BtnLinkFooterPage href="/projetos/wallet-control">
             Acessar
-          </Link>
+          </BtnLinkFooterPage>
         </article>
       </section>
     </>

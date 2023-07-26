@@ -1,5 +1,12 @@
 import Image from "next/image";
-import Link from "next/link";
+
+import BtnLinkFooterPage from "@/components/footer-page/BtnLinkFooterPage";
+
+export const metadata = {
+  title: "Clinica Cmape | Projeto Freelancer",
+  description: "Realizei a codificão do projeto e deploy ",
+};
+
 export default function Cmape() {
   return (
     <>
@@ -33,13 +40,12 @@ export default function Cmape() {
             Web site com painel administrativo personalizado. <br />
             Carregamento de fotos, posts, descrições, titulos.
           </p>
-          <Link
-            className="bg-sky-600 my-12 p-3 inline-block rounded-md"
+          <BtnLinkFooterPage
             href="https://www.cmape.com.br"
-            target="_bank"
+            title="Clinica Cmape"
           >
             Acessar
-          </Link>
+          </BtnLinkFooterPage>
         </article>
       </section>
     </>

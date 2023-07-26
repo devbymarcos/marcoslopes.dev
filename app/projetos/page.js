@@ -1,4 +1,10 @@
 import Card from "@/components/CardLink/Card";
+
+export const metadata = {
+  title: "Marcos Lopes | Projetos",
+  description: "Aqui você pode ver alguns projetos meus realizados",
+};
+
 export default function Projetos() {
   const categry = ["site", "app", "game", "util"];
 
