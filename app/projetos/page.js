@@ -63,7 +63,7 @@ export default function Projetos() {
               title="Wallet Control"
               urlImg="/images/wallet-control.gif"
               alt="gif para apresentar efeito de digitação"
-              urlLink="/projetos/typewriter"
+              urlLink="/projetos/wallet-control"
               category="utilities"
             ></Card>
           </div>
