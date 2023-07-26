@@ -3,9 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { menuData } from "../../app/menu-data";
 import { usePathname } from "next/navigation";
+import MenuMobile from "../menu-mobile/MenuMobile";
+import BtnMobile from "../btn-mobile/BtnMobile";
+import { useState } from "react";
 
 export default function Header() {
   const pathname = usePathname();
+
+  const [menuMobile, setMenuMobile] = useState(false);
+
+  function openMenuMobile() {
+    setMenuMobile(!menuMobile);
+  }
 
   return (
     <header className="h-24 bg-color-secondary z-40 flex justify-between fixed w-full items-center pl-10 pr-10">
@@ -26,6 +35,7 @@ export default function Header() {
           height={18}
         />
       </Link>
+      <BtnMobile onClick={openMenuMobile} open={menuMobile} />
       <nav className="hidden md:block">
         <ul className="flex justify-center items-center gap-16">
           {menuData.map((navItem) => {
@@ -43,6 +53,7 @@ export default function Header() {
           })}
         </ul>
       </nav>
+      <MenuMobile active={menuMobile} onClick={openMenuMobile} />
     </header>
   );
 }
