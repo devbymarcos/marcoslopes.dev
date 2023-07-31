@@ -12,15 +12,14 @@ export default function Projetos() {
     <>
       <div className="pt-28 container">
         <section className="my-20">
-          <nav>
-            <ul className="flex gap-3 ">
+          <nav className="flex justify-center">
+            <ul className="flex gap-3 flex-wrap">
               {categry.map((item, index) => {
                 return (
-                  <li
-                    className="text-white uppercase py-2 px-3 bg-color-secondary rounded"
-                    key={index}
-                  >
-                    {item}
+                  <li key={index}>
+                    <button className="text-white bg- uppercase py-2 px-6 bg-blue-500 font-bold rounded">
+                      {item}
+                    </button>
                   </li>
                 );
               })}
