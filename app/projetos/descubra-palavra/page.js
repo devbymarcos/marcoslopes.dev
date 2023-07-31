@@ -3,19 +3,19 @@ import Image from "next/image";
 import BtnLinkFooterPage from "@/components/footer-page/BtnLinkFooterPage";
 
 export const metadata = {
-  title: "Clinica Cmape | Projeto Freelancer",
-  description: "Realizei a codificão do projeto e deploy ",
+  title: "Gerador de senhas | Projeto Freelancer",
+  description: "Projeto para utilidade",
 };
 
 export default function Cmape() {
   return (
     <>
       <section className="container pt-24 px-3">
-        <h1 className="text-white mt-12 text-4xl">CLINICA CMAPE</h1>
-        <p className="text-white mb-32">Projeto Freelancer</p>
+        <h1 className="text-white mt-12 text-4xl">DESCUBRA PALAVRA</h1>
+        <p className="text-white mb-32">Projeto pessoal</p>
         <div className="w-full md:w-[900px] mb-12 relative h-[300px] md:h-[500px] ">
           <Image
-            src="/images/cmape.gif"
+            src="/images/guess-word.gif"
             fill
             alt="igf mostrando o aplicativo"
           />
@@ -28,21 +28,20 @@ export default function Cmape() {
               HTML
             </li>
             <li className="bg-color-secondary inline-block p-4 rounded">CSS</li>
-            <li className="bg-color-secondary inline-block p-4 rounded">PHP</li>
             <li className="bg-color-secondary inline-block p-4 rounded">
-              MYSQL
+              Javascript
             </li>
           </ul>
         </div>
         <article className="text-white">
           <h2 className="text-4xl text-white mb-4">Descrição</h2>
           <p className="text-2xl">
-            Web site com painel administrativo personalizado. <br />
-            Carregamento de fotos, posts, descrições, titulos.
+            Criei esse jogo com o objetivo de brincar com a minha filha, quando
+            ela começou a formar as palavras
           </p>
           <BtnLinkFooterPage
-            href="https://www.cmape.com.br"
-            title="Clinica Cmape"
+            href="https://geradro-de-senha-vercel.vercel.app/"
+            title="Gerador de senha"
           >
             Acessar
           </BtnLinkFooterPage>

@@ -61,7 +61,7 @@ export default function Projetos() {
               title="Descubra a palavra"
               urlImg="/images/guess-word.gif"
               alt="gif para apresentar efeito de digitação"
-              urlLink="/projetos/typewriter"
+              urlLink="/projetos/descubra-palavra"
               category="utilities"
             ></Card>
             <Card

@@ -39,8 +39,10 @@ export default function WalletControl() {
         <article className="text-white">
           <h2 className="text-4xl text-white mb-4">Descrição</h2>
           <p className="text-2xl">
-            Wallet Control é um sistema de controle financeiro pessoal.Você
-            criar uma carteira e gerencia todos o resto com base nessa carteira
+            Wallet Control é um sistema de controle financeiro pessoal. Você
+            cria uma carteira e gerencia tudo o resto com base nessa carteira.
+            Para alimentar esse projeto, construí uma API em Node.js para fazer
+            o tratamento dos dados.
           </p>
           <BtnLinkFooterPage href="/projetos/wallet-control">
             Acessar
