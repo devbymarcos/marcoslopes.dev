@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+
 import { Github } from "lucide-react";
 import BtnLinkFooterPage from "@/components/footer-page/BtnLinkFooterPage";
 
