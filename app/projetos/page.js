@@ -1,4 +1,10 @@
 import Card from "@/components/CardLink/Card";
+
+export const metadata = {
+  title: "Marcos Lopes | Projetos",
+  description: "Aqui você pode ver alguns projetos meus realizados",
+};
+
 export default function Projetos() {
   const categry = ["site", "app", "game", "util"];
 
@@ -6,15 +12,14 @@ export default function Projetos() {
     <>
       <div className="pt-28 container">
         <section className="my-20">
-          <nav>
-            <ul className="flex gap-3 ">
+          <nav className="flex justify-center">
+            <ul className="flex gap-3 flex-wrap">
               {categry.map((item, index) => {
                 return (
-                  <li
-                    className="text-white uppercase py-2 px-3 bg-color-secondary rounded"
-                    key={index}
-                  >
-                    {item}
+                  <li key={index}>
+                    <button className="text-white bg- uppercase py-2 px-6 bg-blue-500 font-bold rounded">
+                      {item}
+                    </button>
                   </li>
                 );
               })}
@@ -56,14 +61,14 @@ export default function Projetos() {
               title="Descubra a palavra"
               urlImg="/images/guess-word.gif"
               alt="gif para apresentar efeito de digitação"
-              urlLink="/projetos/typewriter"
+              urlLink="/projetos/descubra-palavra"
               category="utilities"
             ></Card>
             <Card
               title="Wallet Control"
               urlImg="/images/wallet-control.gif"
               alt="gif para apresentar efeito de digitação"
-              urlLink="/projetos/typewriter"
+              urlLink="/projetos/wallet-control"
               category="utilities"
             ></Card>
           </div>

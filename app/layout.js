@@ -3,11 +3,6 @@ import Header from "../components/header/header";
 import { Source_Sans_Pro } from "next/font/google";
 import Footer from "@/components/footer/Footer";
 
-export const metadata = {
-  title: "Marcos Lopes | javascript developer",
-  description: "Ola você chegou em meu site pessoal veja meus trabalhos",
-};
-
 const source = Source_Sans_Pro({
   weight: ["400", "700"],
   subsets: ["latin"],
