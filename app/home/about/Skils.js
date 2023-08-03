@@ -16,7 +16,9 @@ export default function Skills() {
   return (
     <>
       <div>
-        <h2 className="text-white font-bold mb-3 text-3xl">Skills</h2>
+        <h3 className="text-white font-bold mb-3 text-xl">
+          Aqui tecnologias que utilizo.
+        </h3>
         <div className="flex items-start flex-wrap h-auto  gap-3">
           {stacks.map((item) => {
             return (
