@@ -17,14 +17,14 @@ export default function Header() {
   }
 
   return (
-    <header className="h-24 bg-color-secondary z-40  fixed w-full items-center ">
+    <header className="h-24 bg-color-secondary z-40 px-3  fixed w-full items-center ">
       <div className="container flex justify-between h-24">
         <Link href="/#" className="flex justify-between gap-4 items-center ">
-          <div className=" relative  h-9 w-9">
+          <div className=" relative  h-9 w-10">
             <Image
               className="object-cover"
               fill
-              src="/images/logo-ico.png"
+              src="/images/icon-logo.png"
               alt="avatar"
             />
           </div>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import BtnLinkFooterPage from "@/components/footer-page/BtnLinkFooterPage";
+import BtnLinkFooterPage from "@/components/buttons/BtnLink";
 
 export const metadata = {
   title: "Gerador de senhas | Projeto Freelancer",

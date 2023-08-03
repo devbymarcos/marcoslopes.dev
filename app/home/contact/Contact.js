@@ -4,6 +4,7 @@ import { Input, TextArea } from "./Input";
 import { useState } from "react";
 import { useAlert, Alert } from "@/components/alert/Alert";
 import { z } from "zod";
+import Btn from "@/components/buttons/Btn";
 
 export function Contact() {
   const [name, setName] = useState("");
@@ -130,12 +131,7 @@ export function Contact() {
           />
 
           <div>
-            <button
-              onClick={postContact}
-              className="py-4 px-6 bg-[#7843E9] text-white font-bold   rounded-md"
-            >
-              Enviar
-            </button>
+            <Btn onClick={postContact}>Enviar</Btn>
           </div>
         </form>
       </section>

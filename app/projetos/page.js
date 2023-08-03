@@ -1,4 +1,5 @@
 import Card from "@/components/CardLink/Card";
+import Btn from "@/components/buttons/Btn";
 
 export const metadata = {
   title: "Marcos Lopes | Projetos",
@@ -17,9 +18,7 @@ export default function Projetos() {
               {categry.map((item, index) => {
                 return (
                   <li key={index}>
-                    <button className="text-white bg- uppercase py-2 px-6 bg-blue-500 font-bold rounded">
-                      {item}
-                    </button>
+                    <Btn>{item}</Btn>
                   </li>
                 );
               })}

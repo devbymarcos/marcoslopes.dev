@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Github } from "lucide-react";
-import BtnLinkFooterPage from "@/components/footer-page/BtnLinkFooterPage";
+import BtnLinkFooterPage from "@/components/buttons/BtnLink";
 
 export const metadata = {
   title: "dBmcode | Web site ",

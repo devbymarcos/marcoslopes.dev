@@ -1,4 +1,4 @@
-import Link from "next/link";
+import BtnLink from "@/components/buttons/BtnLink";
 import Card from "@/components/CardLink/Card";
 
 export default function Projects() {
@@ -31,12 +31,7 @@ export default function Projects() {
           ></Card>
         </div>
         <div className="my-12 text-center">
-          <Link
-            className="py-4 px-6 bg-[#7843E9] text-white font-bold   rounded-md"
-            href="/projetos"
-          >
-            Ver mais projetos
-          </Link>
+          <BtnLink href="/projetos">Ver mais projetos</BtnLink>
         </div>
       </section>
     </>

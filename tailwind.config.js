@@ -34,6 +34,7 @@ module.exports = {
         "color-primary": "#0F0F0F",
         "color-secondary": "#1c1b1b",
         "color-border": "#3C3C3C",
+        "color-purple": "#7843E9",
       },
     },
   },
