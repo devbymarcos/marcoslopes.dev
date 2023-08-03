@@ -1,4 +1,4 @@
-import { source, fira_mono } from "../fonts";
+import { source, fira_mono } from "@/app/fonts";
 import Link from "next/link";
 
 export default function Home() {

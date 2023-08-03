@@ -1,12 +1,7 @@
 import "./globals.css";
 import Header from "../components/header/header";
-import { Source_Sans_Pro } from "next/font/google";
+import { source } from "@/app/fonts";
 import Footer from "@/components/footer/Footer";
-
-const source = Source_Sans_Pro({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-});
 
 export default function RootLayout({ children }) {
   return (

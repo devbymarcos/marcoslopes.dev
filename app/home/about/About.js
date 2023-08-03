@@ -1,23 +1,17 @@
-import { Source_Sans_Pro } from "next/font/google";
 import Skills from "./Skils";
 import MyDesc from "./MyDesc";
 import Image from "next/image";
 
-const source = Source_Sans_Pro({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-});
-
 export default function About() {
   return (
     <>
-      <section id="sobre" className="container  md:h-screen pt-28">
+      <section id="sobre" className="container px-3  md:h-screen pt-28">
         <h1
-          className={`text-white ${source.className} uppercase text-[41px] font-bold  mb-[23px]`}
+          className={`text-white  uppercase text-[41px] font-bold  mb-[23px]`}
         >
           Sobre
         </h1>
-        <p className="text-white  text-[20px] w-96 mb-10  ">
+        <p className={` text-white  text-[20px] w-96 mb-10`}>
           Aqui você encontrará mais informações sobre mim, o que faço e minhas
           habilidades atuais principalmente em termos de programação e
           tecnologia
