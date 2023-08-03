@@ -1,7 +1,12 @@
-import { Source_Sans_Pro } from "next/font/google";
-import Mouse from "../../components/mouse/Mouse";
+import { Source_Sans_Pro, Fira_Mono } from "next/font/google";
+import Link from "next/link";
 
 const source = Source_Sans_Pro({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+});
+
+const fira_mono = Fira_Mono({
   weight: ["400", "700"],
   subsets: ["latin"],
 });
@@ -9,23 +14,28 @@ const source = Source_Sans_Pro({
 export default function Home() {
   return (
     <>
-      <section
-        id=""
-        className=" container  flex justify-center flex-col items-center h-screen"
-      >
+      <section className=" container px-2   h-screen flex flex-col items-start justify-center">
+        <p className={`text-white  text-xl ${fira_mono.className}`}>
+          Olá, pode me chamar
+        </p>
         <h1
-          className={`text-white text-5xl md:text-[62px] font-black uppercase text-center ${source.className}`}
+          className={`text-white text-5xl md:text-[62px] font-black uppercase  ${source.className}`}
         >
-          Olá, me chamo Marcos
+          Marcos lopes
         </h1>
         <p
-          className={`${source.className} text-white text-lg md:text-[28px] md:w-[765px] text-center my-3 leading-10`}
+          className={`${source.className} text-white text-lg md:text-[28px] md:w-[765px]  my-3 leading-10`}
         >
           Um desenvolvedor JavaScript atualmente focado em{" "}
-          <span className="text-rose-500 font-bold  ">Front-end</span>,
+          <span className="text-lime-600 font-bold  ">Front-end</span>,
           construindo o Frontend de sites e aplicativos da Web
         </p>
-        <Mouse />
+        <Link
+          className="px-5 py-4 text-lg border-2 transition-all border-[#7843E9] rounded-md font-bold text-white hover:bg-[#7843E9]"
+          href="#contato"
+        >
+          Mande uma mensagem
+        </Link>
       </section>
     </>
   );
