@@ -1,5 +1,7 @@
+import { ChevronRight } from "lucide-react";
+
 function Paragraph({ children }) {
-  return <p className={`text-white mb-4`}>{children}</p>;
+  return <p className={` mb-4 text-xl text-slate-400`}>{children}</p>;
 }
 
 export default function MyDesc() {

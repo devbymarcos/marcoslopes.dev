@@ -17,43 +17,45 @@ export default function Header() {
   }
 
   return (
-    <header className="h-24 bg-color-secondary z-40 flex justify-between fixed w-full items-center pl-10 pr-10">
-      <Link href="/#" className="flex justify-between gap-4 items-center ">
-        <div className="rounded-full overflow-hidden relative  h-14 w-14">
-          <Image
-            className="object-cover"
-            fill
-            src="/images/marcos.jpg"
-            alt="avatar"
-          />
-        </div>
+    <header className="h-24 bg-color-secondary z-40  fixed w-full items-center ">
+      <div className="container flex justify-between h-24">
+        <Link href="/#" className="flex justify-between gap-4 items-center ">
+          <div className=" relative  h-9 w-9">
+            <Image
+              className="object-cover"
+              fill
+              src="/images/logo-ico.png"
+              alt="avatar"
+            />
+          </div>
 
-        <Image
-          src="/images/marcoslopes-dev.png"
-          alt="logo devbymarcos"
-          width={154}
-          height={18}
-        />
-      </Link>
-      <BtnMobile onClick={openMenuMobile} open={menuMobile} />
-      <nav className="hidden md:block">
-        <ul className="flex justify-center items-center gap-16">
-          {menuData.map((navItem) => {
-            return (
-              <li key={navItem.title}>
-                <Link
-                  className="text-white hover:text-orange-500 font-bold py-4 px-5 "
-                  href={navItem.path}
-                  target={navItem.props ? navItem.props.target : ""}
-                >
-                  {navItem.title}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
-      <MenuMobile active={menuMobile} onClick={openMenuMobile} />
+          <Image
+            src="/images/marcoslopes-dev.png"
+            alt="logo devbymarcos"
+            width={154}
+            height={18}
+          />
+        </Link>
+        <BtnMobile onClick={openMenuMobile} open={menuMobile} />
+        <nav className="hidden md:block h-24">
+          <ul className="flex justify-center items-center h-24 gap-16">
+            {menuData.map((navItem) => {
+              return (
+                <li key={navItem.title}>
+                  <Link
+                    className="text-white hover:text-orange-500 font-bold py-4 px-5 "
+                    href={navItem.path}
+                    target={navItem.props ? navItem.props.target : ""}
+                  >
+                    {navItem.title}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+        <MenuMobile active={menuMobile} onClick={openMenuMobile} />
+      </div>
     </header>
   );
 }

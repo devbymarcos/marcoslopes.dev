@@ -1,6 +1,7 @@
 import { Source_Sans_Pro } from "next/font/google";
 import Skills from "./Skils";
 import MyDesc from "./MyDesc";
+import Image from "next/image";
 
 const source = Source_Sans_Pro({
   weight: ["400", "700"],
@@ -12,18 +13,28 @@ export default function About() {
     <>
       <section id="sobre" className="container  md:h-screen pt-28">
         <h1
-          className={`text-white ${source.className} uppercase text-[41px] font-bold text-center mb-[23px]`}
+          className={`text-white ${source.className} uppercase text-[41px] font-bold  mb-[23px]`}
         >
           Sobre
         </h1>
-        <p className="text-white text-center text-[20px] md:pl-[15.36%] md:pr-[15.36%]">
+        <p className="text-white  text-[20px] w-96 mb-10  ">
           Aqui você encontrará mais informações sobre mim, o que faço e minhas
           habilidades atuais principalmente em termos de programação e
           tecnologia
         </p>
-        <div className="flex flex-col md:flex-row px-2 gap-32 mt-24 items-start">
-          <MyDesc />
-          <Skills />
+        <div className="grid md:grid-cols-2 gap-5">
+          <div>
+            <MyDesc />
+            <Skills />
+          </div>
+          <div className="relative w-[300px] overflow-hidden rounded h-[300px] justify-self-center">
+            <Image
+              className=" filter grayscale hover:filter-none"
+              src="/images/marco.jpg"
+              alt="Marcos Lopes"
+              fill
+            />
+          </div>
         </div>
       </section>
     </>
