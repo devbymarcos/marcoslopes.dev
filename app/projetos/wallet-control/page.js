@@ -1,4 +1,4 @@
-import BtnLinkFooterPage from "@/components/footer-page/BtnLinkFooterPage";
+import BtnLinkFooterPage from "@/components/buttons/BtnLink";
 import Image from "next/image";
 import Link from "next/link";
 

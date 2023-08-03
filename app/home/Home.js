@@ -1,15 +1,5 @@
-import { Source_Sans_Pro, Fira_Mono } from "next/font/google";
+import { source, fira_mono } from "../fonts";
 import Link from "next/link";
-
-const source = Source_Sans_Pro({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-});
-
-const fira_mono = Fira_Mono({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-});
 
 export default function Home() {
   return (
@@ -31,7 +21,7 @@ export default function Home() {
           construindo o Frontend de sites e aplicativos da Web
         </p>
         <Link
-          className="px-5 py-4 text-lg border-2 transition-all border-[#7843E9] rounded-md font-bold text-white hover:bg-[#7843E9]"
+          className="px-5 py-4 text-lg border-2 transition-all border-color-purple rounded-md font-bold text-white hover:bg-color-purple uppercase"
           href="#contato"
         >
           Mande uma mensagem
