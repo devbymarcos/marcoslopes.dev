@@ -29,8 +29,8 @@ export default function About() {
           </div>
           <div className="relative w-[300px] overflow-hidden rounded h-[300px] justify-self-center">
             <Image
-              className=" filter grayscale hover:filter-none"
-              src="/images/marco.jpg"
+              className="hover:scale-105 transition-all filter grayscale hover:filter-none"
+              src="/images/marcos-v2.png"
               alt="Marcos Lopes"
               fill
             />
