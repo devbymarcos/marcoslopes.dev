@@ -22,7 +22,7 @@ export default function Home() {
         </p>
         <Link
           className="px-5 py-4 text-lg border-2 transition-all border-color-purple rounded-md font-bold text-white hover:bg-color-purple uppercase"
-          href="#contato"
+          href="/#contato"
         >
           Mande uma mensagem
         </Link>
