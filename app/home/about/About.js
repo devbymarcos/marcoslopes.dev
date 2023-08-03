@@ -20,6 +20,16 @@ export default function About() {
           <div>
             <MyDesc />
             <Skills />
+            <div className="mt-10">
+              <div className="text-white font-bold">DevTools</div>
+              <ul>
+                <li className="text-white italic">
+                  SO - POP_OS 22.04 - {`[linux]`}
+                </li>
+                <li className="text-white italic">VsCode</li>
+                <li className="text-white italic">Beekeeper Studio</li>
+              </ul>
+            </div>
           </div>
           <div className="relative w-[300px] overflow-hidden rounded h-[300px] justify-self-center">
             <Image
