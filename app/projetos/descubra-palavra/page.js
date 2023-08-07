@@ -40,7 +40,7 @@ export default function Cmape() {
             ela começou a formar as palavras
           </p>
           <BtnLinkFooterPage
-            href="https://geradro-de-senha-vercel.vercel.app/"
+            href="https://descubra-palavra.vercel.app/"
             title="Gerador de senha"
           >
             Acessar
