@@ -31,14 +31,6 @@ export default function About() {
               </ul>
             </div>
           </div>
-          <div className="relative w-[300px] overflow-hidden rounded h-[300px] justify-self-center">
-            <Image
-              className="hover:scale-105 transition-all filter grayscale hover:filter-none"
-              src="/images/marcos-v2.png"
-              alt="Marcos Lopes"
-              fill
-            />
-          </div>
         </div>
       </section>
     </>
