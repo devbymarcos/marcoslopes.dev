@@ -149,10 +149,10 @@ export function Contact() {
                   Email : marcoslopes.dev@gmail.com
                 </li>
                 <li className="my-4 flex gap-4">
-                  <a href="https://www.instagram.com/marcoslopes.dev">
+                  <a href="https://www.instagram.com/devbymarcos">
                     <Instagram color="#fff" size={32} />
                   </a>
-                  <a href="https://www.linkedin.com/in/marcoslopes-dev">
+                  <a href="https://www.linkedin.com/in/devbymarcos">
                     <LinkedinIcon color="#fff" size={32} />
                   </a>
                   <a href="https://www.facebook.com/marcoslopes.ml">
