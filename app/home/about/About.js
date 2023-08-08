@@ -16,21 +16,9 @@ export default function About() {
           habilidades atuais principalmente em termos de programação e
           tecnologia
         </p>
-        <div className="grid md:grid-cols-2 gap-5">
-          <div>
-            <MyDesc />
-            <Skills />
-            <div className="mt-10">
-              <div className="text-white font-bold">DevTools</div>
-              <ul>
-                <li className="text-white italic">
-                  SO - POP_OS 22.04 - {`[linux]`}
-                </li>
-                <li className="text-white italic">VsCode</li>
-                <li className="text-white italic">Beekeeper Studio</li>
-              </ul>
-            </div>
-          </div>
+        <div className="grid md:grid-cols-2 gap-6">
+          <MyDesc />
+          <Skills />
         </div>
       </section>
     </>

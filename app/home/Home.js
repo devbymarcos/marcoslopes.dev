@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <section className=" container px-2 gap-3 pt-36 items-center   h-screen grid grid-cols-2 ">
+      <section className=" container px-2 gap-3 pt-36 items-center   h-screen grid grid-cols-1 md:grid-cols-2 ">
         <div className="  ">
           <p className={`text-white  text-xl ${fira_mono.className}`}>
             Olá, pode me chamar
@@ -16,10 +16,10 @@ export default function Home() {
             Marcos lopes
           </h1>
           <p
-            className={`${source.className} text-white text-lg md:text-[28px]   my-3 leading-10`}
+            className={`${source.className} text-white text-xl md:text-[28px]   my-6 leading-7`}
           >
             Um desenvolvedor JavaScript atualmente focado em{" "}
-            <span className="text-lime-600 font-bold  ">Front-end</span>,
+            <span className="text-color-purple font-bold  ">Front-end</span>,
             construindo o Frontend de sites e aplicativos da Web
           </p>
           <Link
@@ -29,7 +29,7 @@ export default function Home() {
             Mande uma mensagem
           </Link>
         </div>
-        <div className="relative w-[300px] overflow-hidden rounded h-[300px] justify-self-center">
+        <div className="relative w-[300px] overflow-hidden rounded-full hover:shadow-md h-[300px] justify-self-center">
           <Image
             className="hover:scale-105 transition-all filter grayscale hover:filter-none"
             src="/images/marcos-v2.png"
