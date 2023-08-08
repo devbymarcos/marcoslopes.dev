@@ -146,7 +146,7 @@ export function Contact() {
                   Telefone : (41) - 992169810
                 </li>
                 <li className="text-white italic">
-                  Email : marcoslopes.dev@gmail.com
+                  Email : marcoslopes.cwb@gmail.com
                 </li>
                 <li className="my-4 flex gap-4">
                   <a href="https://www.instagram.com/devbymarcos">
