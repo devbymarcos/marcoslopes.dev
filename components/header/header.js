@@ -1,11 +1,12 @@
 "use client";
-import Image from "next/image";
+
 import Link from "next/link";
 import { menuData } from "../../app/menu-data";
 import { usePathname } from "next/navigation";
 import MenuMobile from "../menu-mobile/MenuMobile";
 import BtnMobile from "../btn-mobile/BtnMobile";
 import { useState } from "react";
+import Logo from "@/components/logo/Logo";
 
 export default function Header() {
   const pathname = usePathname();
@@ -20,21 +21,9 @@ export default function Header() {
     <header className="h-24 bg-color-secondary z-40 px-3  fixed w-full items-center ">
       <div className="container flex justify-between h-24">
         <Link href="/#" className="flex justify-between gap-4 items-center ">
-          <div className=" relative  h-9 w-10">
-            <Image
-              className="object-cover"
-              fill
-              src="/images/icon-logo.png"
-              alt="avatar"
-            />
+          <div className="relative">
+            <Logo src="/images/logo-devbymarcos.png" w={230} h={29} />
           </div>
-
-          <Image
-            src="/images/marcoslopes-dev.png"
-            alt="logo devbymarcos"
-            width={154}
-            height={18}
-          />
         </Link>
         <BtnMobile onClick={openMenuMobile} open={menuMobile} />
         <nav className="hidden md:block h-24">
