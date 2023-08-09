@@ -1,4 +1,4 @@
-import BtnLinkFooterPage from "@/components/buttons/BtnLink";
+import BtnLink from "@/components/buttons/BtnLink";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -41,12 +41,12 @@ export default function WalletControl() {
           <p className="text-2xl">
             Wallet Control é um sistema de controle financeiro pessoal. Você
             cria uma carteira e gerencia tudo o resto com base nessa carteira.
-            Para alimentar esse projeto, construí uma API em Node.js para fazer
-            o tratamento dos dados.
+            Para alimentar esse projeto, crie uma API em Node.js para fazer o
+            tratamento dos dados.
           </p>
-          <BtnLinkFooterPage href="/projetos/wallet-control">
+          <BtnLink href="https://wallet-nextjs-omega.vercel.app/login">
             Acessar
-          </BtnLinkFooterPage>
+          </BtnLink>
         </article>
       </section>
     </>

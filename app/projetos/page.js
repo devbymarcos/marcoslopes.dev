@@ -54,6 +54,13 @@ export default function Projetos() {
       urlLink: "/projetos/wallet-control",
       category: category.APP,
     },
+    {
+      title: "Pizzaria Fernandes",
+      urlImg: "/images/pizzaria-fernandes.png",
+      alt: "imagem do site pizzaria",
+      urlLink: "/projetos/pizzaria-fernandes",
+      category: category.APP,
+    },
   ];
 
   function filterElement(event) {
