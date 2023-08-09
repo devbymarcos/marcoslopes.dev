@@ -2,13 +2,6 @@
 import Card from "@/components/CardLink/Card";
 import Btn from "@/components/buttons/Btn";
 
-import { useRef } from "react";
-
-export const metadata = {
-  title: "Marcos Lopes | Projetos",
-  description: "Aqui você pode ver alguns projetos meus realizados",
-};
-
 export default function Projetos() {
   const category = {
     ALL: "all",
