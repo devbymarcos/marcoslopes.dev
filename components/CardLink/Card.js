@@ -8,7 +8,7 @@ export default function Card({ title, urlImg, alt, urlLink, category }) {
       <Link
         data-category={category}
         href={urlLink}
-        className="hover:-translate-y-3 transition-all justify-self-auto"
+        className="filter-list hover:-translate-y-3  transition-all duration-700 justify-self-auto"
       >
         <div className="w-full h-[270px] overflow-hidden relative rounded-sm">
           <Image
