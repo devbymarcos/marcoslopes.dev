@@ -148,17 +148,6 @@ export function Contact() {
                 <li className="text-white italic">
                   Email : marcoslopes.cwb@gmail.com
                 </li>
-                <li className="my-4 flex gap-4">
-                  <a href="https://www.instagram.com/devbymarcos">
-                    <Instagram color="#fff" size={32} />
-                  </a>
-                  <a href="https://www.linkedin.com/in/devbymarcos">
-                    <LinkedinIcon color="#fff" size={32} />
-                  </a>
-                  <a href="https://www.facebook.com/marcoslopes.ml">
-                    <Facebook color="#fff" size={32} />
-                  </a>
-                </li>
               </ul>
             </div>
           </div>

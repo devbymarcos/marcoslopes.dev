@@ -2,24 +2,27 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Card({ title, urlImg, alt, urlLink, category }) {
+export default function Card({
+  children,
+  title,
+  urlImg,
+  alt,
+  urlLink,
+  category,
+}) {
   return (
     <>
       <Link
         data-category={category}
         href={urlLink}
-        className="filter-list hover:-translate-y-3  transition-all duration-700 justify-self-auto"
+        className="filter-list hover:-translate-y-3 p-2 rounded hover:bg-black  flex flex-start gap-2 mb-11 transition-all duration-700 "
       >
-        <div className="w-full h-[270px] overflow-hidden relative rounded-sm">
-          <Image
-            className=" object-contain w-full "
-            src={urlImg}
-            alt={alt}
-            fill
-          />
+        <div className=" overflow-hidden w-[150px] h-[100px]  relative rounded-sm">
+          <Image src={urlImg} alt={alt} fill />
         </div>
-        <div className="my-5 text-center  text-[30px]">
-          <h2 className={` text-white  `}>{title}</h2>
+        <div className="mb-5 text-white w-4/5 ">
+          <h2 className={` text-white text-lg  `}>{title}</h2>
+          <p>{children}</p>
         </div>
       </Link>
     </>
