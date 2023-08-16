@@ -1,12 +1,11 @@
 import { source, fira_mono } from "@/app/fonts";
 import Link from "next/link";
-import { Instagram, LinkedinIcon, Facebook } from "lucide-react";
 import Nav from "@/components/menu/Nav";
 
 export default function Home() {
   return (
     <>
-      <section className=" md:fixed w-[400px]  px-2 gap-3 pt-32  ">
+      <section className=" md:fixed w-[400px]  px-2 gap-3 pt-16  ">
         <div className="  ">
           <h1
             className={`text-white text-5xl md:text-[45px] font-black uppercase  ${source.className}`}
@@ -37,23 +36,6 @@ export default function Home() {
           </div>
         </div>
         <Nav />
-        <div>
-          <div className="px-3">
-            <ul>
-              <li className="my-4 flex gap-4">
-                <a href="https://www.instagram.com/devbymarcos">
-                  <Instagram color="#fff" size={32} />
-                </a>
-                <a href="https://www.linkedin.com/in/devbymarcos">
-                  <LinkedinIcon color="#fff" size={32} />
-                </a>
-                <a href="https://www.facebook.com/marcoslopes.ml">
-                  <Facebook color="#fff" size={32} />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
       </section>
     </>
   );
