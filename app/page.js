@@ -6,11 +6,6 @@ import Projects from "./home/projects/Projects";
 import Stacks from "./home/stacks/Stacks";
 import Avatar from "./home/avatar/Avatar";
 
-export const metadata = {
-  title: "Marcos Lopes | javascript developer",
-  description: "Ola você chegou em meu site pessoal veja meus trabalhos",
-};
-
 export default function PageIndex() {
   return (
     <>
