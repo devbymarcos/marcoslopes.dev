@@ -5,7 +5,7 @@ function Paragraph({ children }) {
 export default function MyDesc() {
   return (
     <>
-      <article className="basis-3/4">
+      <article className="">
         <Paragraph>
           Meu nome é Marcos lopes Juvêncio e sou um entusiasta de programação.
           Desde 2017, venho me dedicando ao mundo da desenvolvimento de

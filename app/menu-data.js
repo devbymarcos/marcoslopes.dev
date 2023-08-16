@@ -1,7 +1,7 @@
 export const menuData = [
   {
-    title: "HOME",
-    path: "/#",
+    title: "INÍCIO",
+    path: "/",
   },
   {
     title: "SOBRE",
@@ -9,7 +9,11 @@ export const menuData = [
   },
   {
     title: "PROJETOS",
-    path: "/projetos",
+    path: "/#projetos",
+  },
+  {
+    title: "TECNOLOGIAS",
+    path: "/#tecnologias",
   },
   {
     title: "CONTATO",

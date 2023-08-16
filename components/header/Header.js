@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 import MenuMobile from "../menu-mobile/MenuMobile";
 import BtnMobile from "../btn-mobile/BtnMobile";
 import { useState } from "react";
-import Logo from "@/components/logo/Logo";
 
 export default function Header() {
   const pathname = usePathname();
@@ -22,7 +21,7 @@ export default function Header() {
       <div className="container flex justify-between h-24">
         <Link href="/#" className="flex justify-between gap-4 items-center ">
           <div className="relative">
-            <Logo src="/images/logo-devbymarcos.png" w={230} h={29} />
+            <h2 className="text-white text-3xl font-bold">Marcos Juvêncio</h2>
           </div>
         </Link>
         <BtnMobile onClick={openMenuMobile} open={menuMobile} />

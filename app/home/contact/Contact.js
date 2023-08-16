@@ -95,14 +95,29 @@ export function Contact() {
       <Spinner active={loading} />
       <Alert alertObj={alertObj} />
       <section id="contato" className="container pt-28 px-4">
-        <div className="w-full mb-28 text-center text-white">
-          <h2 className=" text-5xl mb-6 font-bold">CONTATO</h2>
-          <p className="text-xl md:px-[16%]">
+        <div className="w-full mb-16 text-left  text-white">
+          <h2 className=" text-2xl mb-6 font-bold">CONTATO</h2>
+          <p className="text-lg ">
             Sinta-se à vontade para entrar em contato comigo enviando o
             formulário abaixo e retornarei o mais breve possível possível
           </p>
         </div>
-        <div className="flex  flex-col-reverse gap-20">
+        <div className="flex  flex-col gap-20">
+          <div>
+            <div className=" ">
+              <h3 className="text-white text-xl mb-3 font-bold">
+                Dados de Contato
+              </h3>
+              <ul>
+                <li className="text-white italic">
+                  Telefone : (41) - 992169810
+                </li>
+                <li className="text-white italic">
+                  Email : marcoslopes.cwb@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
           <form className="md:w-full mx-auto rounded border-t-2  bg-color-secondary p-10 flex flex-col">
             <Input
               label="Nome"
@@ -136,32 +151,6 @@ export function Contact() {
               <Btn onClick={postContact}>Enviar</Btn>
             </div>
           </form>
-          <div>
-            <div className="px-3 ">
-              <h3 className="text-white text-xl mb-3 font-bold">
-                Dados de Contato
-              </h3>
-              <ul>
-                <li className="text-white italic">
-                  Telefone : (41) - 992169810
-                </li>
-                <li className="text-white italic">
-                  Email : marcoslopes.cwb@gmail.com
-                </li>
-                <li className="my-4 flex gap-4">
-                  <a href="https://www.instagram.com/devbymarcos">
-                    <Instagram color="#fff" size={32} />
-                  </a>
-                  <a href="https://www.linkedin.com/in/devbymarcos">
-                    <LinkedinIcon color="#fff" size={32} />
-                  </a>
-                  <a href="https://www.facebook.com/marcoslopes.ml">
-                    <Facebook color="#fff" size={32} />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </section>
     </>
