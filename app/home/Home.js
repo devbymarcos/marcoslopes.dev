@@ -6,7 +6,7 @@ import Nav from "@/components/menu/Nav";
 export default function Home() {
   return (
     <>
-      <section className=" fixed w-[400px]  px-2 gap-3 pt-32  ">
+      <section className=" md:fixed w-[400px]  px-2 gap-3 pt-32  ">
         <div className="  ">
           <h1
             className={`text-white text-5xl md:text-[45px] font-black uppercase  ${source.className}`}
