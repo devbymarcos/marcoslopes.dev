@@ -42,6 +42,11 @@ export default function Stacks() {
       srcImg: "/images/stacks-logo/node.png",
       alt: "logo node",
     },
+    {
+      name: "typescript",
+      srcImg: "/images/stacks-logo/typescript.png",
+      alt: "logo typescript",
+    },
   ];
   return (
     <>
