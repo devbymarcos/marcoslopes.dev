@@ -5,7 +5,7 @@ import TagSkill from "@/components/tag-skill/TagSkill";
 export default function Projects() {
   return (
     <>
-      <section id="projetos" className=" h-auto md:h-screen container  pt-28">
+      <section id="projetos" className=" h-auto md:h-screen  pt-28">
         <div className="px-2">
           <Card
             title="Clínica Cmape"
