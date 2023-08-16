@@ -6,7 +6,7 @@ export default function Avatar() {
       <div className="w-[300px] h-[300px] transition-all rounded-full mx-auto hover:grayscale-0  overflow-hidden grayscale border-2 border-color-purple  my-40 ">
         <Image
           className="object-cover p-3 rounded-full"
-          src="/images/avatar/marcos.png"
+          src="/images/avatar/marcos-n.png"
           width={300}
           height={300}
         />
