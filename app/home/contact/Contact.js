@@ -99,7 +99,7 @@ export function Contact() {
           <h2 className=" text-2xl mb-6 font-bold">CONTATO</h2>
           <p className="text-lg ">
             Sinta-se à vontade para entrar em contato comigo enviando o
-            formulário abaixo e retornarei o mais breve possível possível
+            formulário abaixo, retornarei o mais breve possível
           </p>
         </div>
         <div className="flex  flex-col gap-20">
