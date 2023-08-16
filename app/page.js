@@ -4,6 +4,7 @@ import { Contact } from "./home/contact/Contact";
 import Home from "./home/Home";
 import Projects from "./home/projects/Projects";
 import Stacks from "./home/stacks/Stacks";
+import Avatar from "./home/avatar/Avatar";
 
 export const metadata = {
   title: "Marcos Lopes | javascript developer",
@@ -19,6 +20,7 @@ export default function PageIndex() {
             <Home />
           </div>
           <div className="col-two">
+            <Avatar />
             <About />
             <Projects />
             <Stacks />
