@@ -46,6 +46,12 @@ export default function Stacks() {
   return (
     <>
       <section id="tecnologias" className=" h-auto md:h-screen  my-28  pt-28">
+        <h1 className="mb-2 text-white uppercase text-2xl font-bold">
+          Tecnologias
+        </h1>
+        <p className="text-white mb-10">
+          Tecnologias que conheço até o momento
+        </p>
         <div className="grid realtive grid-cols-4 gap-4 h-auto">
           {dataStack.map((item) => {
             return (

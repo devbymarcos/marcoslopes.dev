@@ -12,8 +12,11 @@ export default function Projects() {
             urlImg="/images/cmape.gif"
             alt="gif para site cmape"
             urlLink="/projetos/cmape"
+            stacks={["php", "Html", "CSS", "JQuery"]}
           >
-            Web site para apresentação da Clínica, blog, painel administrativo
+            <p>
+              Web site para apresentação da Clínica, blog, painel administrativo
+            </p>
             <TagSkill stacks={["php", "Html", "CSS", "JQuery"]} />
           </Card>
           <Card
@@ -22,9 +25,11 @@ export default function Projects() {
             alt="gif para site dbmcode"
             urlLink="/projetos/dbmcode"
           >
-            Web site para distribuição de conteudo sobre desenvolvimento web
-            base na quantidade de caracteres escolhido. Possui funcionalidade
-            copy e seletor de quantidade.
+            <p>
+              Web site para distribuição de conteudo sobre desenvolvimento web
+              base na quantidade de caracteres escolhido. Possui funcionalidade
+              copy e seletor de quantidade.
+            </p>
             <TagSkill stacks={["Reactjs", "TailwindCSS", "Nextjs"]} />
           </Card>
           <Card
@@ -33,9 +38,12 @@ export default function Projects() {
             alt="gif para apresentar o gerador de senha"
             urlLink="/projetos/createpasswd"
           >
-            Projeto para prática de JavaScript. O app gera senha aleatórias com
-            base na quantidade de caracteres escolhido. Possui funcionalidade
-            copy e seletor de quantidade.
+            <p>
+              Projeto para prática de JavaScript. O app gera senha aleatórias
+              com base na quantidade de caracteres escolhido. Possui
+              funcionalidade copy e seletor de quantidade.
+            </p>
+
             <TagSkill stacks={["Javascript", "html", "css"]} />
           </Card>
         </div>
