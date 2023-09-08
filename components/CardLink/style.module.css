@@ -35,3 +35,9 @@
   margin: 10px 0;
   flex-wrap: wrap;
 }
+
+@media (max-width: 890px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+}
