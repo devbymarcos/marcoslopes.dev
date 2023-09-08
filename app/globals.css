@@ -2,9 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Source Sans 3', sans-serif;
+
+	scroll-behavior: smooth;
+	scroll-margin-top: 100px;
+} */
+
+:root {
+  --color-primary: #0f0f0f;
+  --color-secondary: #1c1b1b;
+
+  --color-purple: #7843e9;
+  --color-green: #22c55e;
+
+  --color-text-primary: #fff;
+  --color-text-secondary: #87a3b8;
+
+  --radius: 4px;
+}
 html {
   scroll-behavior: smooth !important;
 }
+
+body {
+  background-color: var(--color-primary);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 .container {
   width: 100%;
   max-width: 1250px;
