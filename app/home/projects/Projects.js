@@ -1,8 +1,35 @@
+// "use client"
 import BtnLink from "@/components/buttons/BtnLink";
 import Card from "@/components/CardLink/Card";
 import TagSkill from "@/components/tag-skill/TagSkill";
+import { client, gqlquery } from "@/lib/graphClient";
+// import { useEffect } from "react";
+
+const query = gqlquery`
+  {
+    allProjects {
+      name
+      body {
+        value
+      }
+      category {
+        name
+      }
+    }
+  }
+`;
 
 export default function Projects() {
+  async function getProjects() {
+    const data = await client.request(query);
+    console.log(data);
+  }
+
+  getProjects();
+
+  // useEffect(() => {
+  //   getProjects();
+  // }, []);
   return (
     <>
       <section id="projetos" className=" h-auto md:h-screen  pt-28">

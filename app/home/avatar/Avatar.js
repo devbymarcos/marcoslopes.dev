@@ -10,6 +10,7 @@ export default function Avatar() {
           src="/images/avatar/marcos-n.png"
           width={300}
           height={300}
+          alt="foto marcos lopes "
         />
       </div>
       <div className="px-3 flex justify-center">
