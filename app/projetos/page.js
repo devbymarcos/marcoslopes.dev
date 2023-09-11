@@ -19,7 +19,7 @@ export default async function Projetos() {
                   title={item.name}
                   urlImg={item.coverurl}
                   alt={item.alt}
-                  urlLink={`/project/${item.id}`}
+                  urlLink={`/projeto/${item.id}`}
                   category={item.stackFilter.name}
                 />
               );
