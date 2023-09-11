@@ -1,0 +1,24 @@
+.card {
+  transition: all 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+}
+
+.cardBoxImage {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 1rem;
+}
+.cardBoxImage img {
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+.cardBody h1 {
+  color: var(--color-text-primary);
+  text-align: center;
+  font-size: 2rem;
+}

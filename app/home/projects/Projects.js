@@ -1,32 +1,10 @@
 import BtnLink from "@/components/buttons/BtnLink";
 import Card from "@/components/CardLink/Card";
 import TagSkill from "@/components/tag-skill/TagSkill";
-import { client, gqlquery } from "@/lib/graphClient";
-
-const query = gqlquery`
-  {
-    allProjects(orderBy: [name_DESC]) {
-      id
-      name
-      coverurl
-      summary {
-        value
-      }
-      category {
-        name
-      }
-
-    }
-  }
-`;
-
-async function getProjects() {
-  const response = await client.request(query);
-  return response;
-}
+import { getProjectsHome } from "@/lib/graphQuery";
 
 export default async function Projects() {
-  const data = await getProjects();
+  const data = await getProjectsHome();
 
   if (!data) return null;
   return (
@@ -35,7 +13,7 @@ export default async function Projects() {
         <div className="px-2">
           {data.allProjects.map((item) => {
             let arr = [];
-            item.category.forEach((element) => {
+            item.technology.forEach((element) => {
               arr.push(element.name);
             });
             return (
@@ -47,9 +25,7 @@ export default async function Projects() {
                 stacks={["php", "Html", "CSS", "JQuery"]}
                 key={item.id}
               >
-                <p>
-                  {item.summary.value.document.children[0].children[0].value}
-                </p>
+                <p>{item.summaryContent}</p>
                 <TagSkill stacks={arr} />
               </Card>
             );

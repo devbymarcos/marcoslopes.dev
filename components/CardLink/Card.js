@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import TagSkill from "../tag-skill/TagSkill";
 import style from "./style.module.css";
 
 export default function Card({
