@@ -6,14 +6,16 @@ import { client, gqlquery } from "@/lib/graphClient";
 const query = gqlquery`
   {
     allProjects(orderBy: [name_DESC]) {
+      id
       name
+      coverurl
       summary {
         value
       }
       category {
         name
       }
-      coverurl
+
     }
   }
 `;
@@ -41,7 +43,7 @@ export default async function Projects() {
                 title={item.name}
                 urlImg={item.coverurl}
                 alt="gif para site cmape"
-                urlLink="/projetos/cmape"
+                urlLink={`/projetos?${item.name}&id=${item.id}`}
                 stacks={["php", "Html", "CSS", "JQuery"]}
                 key={item.id}
               >
