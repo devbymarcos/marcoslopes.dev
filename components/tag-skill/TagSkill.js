@@ -1,5 +1,4 @@
 export default function TagSkill({ stacks }) {
-  console.log(stacks);
   return (
     <>
       <div className="flex items-start flex-wrap h-auto mt-6  gap-3">

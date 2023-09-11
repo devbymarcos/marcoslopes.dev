@@ -1,37 +1,30 @@
-"use client";
 import BtnLink from "@/components/buttons/BtnLink";
 import Card from "@/components/CardLink/Card";
 import TagSkill from "@/components/tag-skill/TagSkill";
 import { client, gqlquery } from "@/lib/graphClient";
-import { useEffect, useState } from "react";
 
 const query = gqlquery`
   {
-    allProjects {
+    allProjects(orderBy: [name_DESC]) {
       name
-      body {
+      summary {
         value
       }
       category {
         name
       }
+      coverurl
     }
   }
 `;
 
-export default function Projects() {
-  const [data, setData] = useState(null);
+async function getProjects() {
+  const response = await client.request(query);
+  return response;
+}
 
-  async function getProjects() {
-    const response = await client.request(query);
-    console.log(response);
-    setData(response);
-  }
-
-  console.log(data);
-  useEffect(() => {
-    getProjects();
-  }, []);
+export default async function Projects() {
+  const data = await getProjects();
 
   if (!data) return null;
   return (
@@ -46,12 +39,15 @@ export default function Projects() {
             return (
               <Card
                 title={item.name}
-                urlImg="/images/cmape.gif"
+                urlImg={item.coverurl}
                 alt="gif para site cmape"
                 urlLink="/projetos/cmape"
                 stacks={["php", "Html", "CSS", "JQuery"]}
+                key={item.id}
               >
-                <p>{item.body.value.document.children[0].children[0].value}</p>
+                <p>
+                  {item.summary.value.document.children[0].children[0].value}
+                </p>
                 <TagSkill stacks={arr} />
               </Card>
             );
