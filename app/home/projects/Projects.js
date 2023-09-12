@@ -21,7 +21,7 @@ export default async function Projects() {
                 title={item.name}
                 urlImg={item.coverurl}
                 alt="gif para site cmape"
-                urlLink={`/projetos?${item.name}&id=${item.id}`}
+                urlLink={`/projetos/${item.slug}`}
                 stacks={["php", "Html", "CSS", "JQuery"]}
                 key={item.id}
               >

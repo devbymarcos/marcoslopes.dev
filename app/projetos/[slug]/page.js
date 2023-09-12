@@ -9,7 +9,7 @@ export const metadata = {
 };
 
 export default async function Project({ params }) {
-  const data = await getProject(params.id);
+  const data = await getProject(params.slug);
 
   return (
     <>
@@ -38,13 +38,26 @@ export default async function Project({ params }) {
           className={style.content}
           dangerouslySetInnerHTML={{ __html: data.project.content }}
         ></article>
-        <BtnLinkFooterPage
-          href={data.project.linkProject}
-          title={data.project.name}
-          target="_blank"
-        >
-          Acessar
-        </BtnLinkFooterPage>
+        <div className="flex gap-4">
+          <BtnLinkFooterPage
+            href={data.project.linkProject}
+            title={data.project.name}
+            target="_blank"
+          >
+            Acessar
+          </BtnLinkFooterPage>
+          <BtnLinkFooterPage
+            href={
+              data.project.repositoryLink
+                ? data.project.repositoryLink
+                : `/projetos/${params.slug}`
+            }
+            title={data.project.name}
+            target="_blank"
+          >
+            Código
+          </BtnLinkFooterPage>
+        </div>
       </section>
     </>
   );
