@@ -11,7 +11,7 @@ const Cardprojects = ({ children, title, urlImg, alt, urlLink, category }) => {
         className={`filter-list ${style.card}`}
       >
         <div className={style.cardBoxImage}>
-          <Image src={urlImg} alt={alt} fill />
+          <Image src={urlImg} alt={alt ? alt : "cover image"} fill />
         </div>
         <div className={style.cardBody}>
           <h1>{title}</h1>
