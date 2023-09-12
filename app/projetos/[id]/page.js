@@ -8,9 +8,9 @@ export const metadata = {
   description: "Realizei a codificão do projeto e deploy ",
 };
 
-export default async function Project() {
-  const data = await getProject("wallet-control");
-  console.log(data);
+export default async function Project({ params }) {
+  const data = await getProject(params.id);
+
   return (
     <>
       <section className="container pt-24 px-3">
@@ -41,6 +41,7 @@ export default async function Project() {
         <BtnLinkFooterPage
           href={data.project.linkProject}
           title={data.project.name}
+          target="_blank"
         >
           Acessar
         </BtnLinkFooterPage>

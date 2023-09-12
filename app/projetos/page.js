@@ -4,7 +4,6 @@ import Cardprojects from "@/components/card-projects/Cardprojects";
 
 export default async function Projetos() {
   const data = await getProjectsPage();
-  console.log(data);
 
   return (
     <>
