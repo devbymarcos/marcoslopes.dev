@@ -1,5 +1,5 @@
 import { getProjectsPage } from "@/lib/graphQuery";
-import Navprojects from "../home/projects/Navprojects";
+import Navprojects from "./Navprojects";
 import Cardprojects from "@/components/card-projects/Cardprojects";
 
 export default async function Projetos() {

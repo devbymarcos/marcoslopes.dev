@@ -30,7 +30,12 @@ const Navprojects = ({ content }) => {
           {content.allCategoryFilters.map((item) => {
             return (
               <li key={item.name}>
-                <Btn onClick={filterElement}>{item.name}</Btn>
+                <button
+                  className="bg-color-purple rounded-full px-4 py-2 text-lg text-white"
+                  onClick={filterElement}
+                >
+                  {item.name}
+                </button>
               </li>
             );
           })}

@@ -9,7 +9,6 @@ import { useState } from "react";
 
 export default function Header() {
   const pathname = usePathname();
-  console.log(pathname);
 
   const [menuMobile, setMenuMobile] = useState(false);
 

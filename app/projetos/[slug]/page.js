@@ -27,7 +27,10 @@ export default async function Project({ params }) {
           <ul className="flex  gap-2 ">
             {data.project.technology.map((item) => {
               return (
-                <li className="bg-color-secondary inline-block p-4 rounded">
+                <li
+                  key={item.id}
+                  className="bg-color-secondary inline-block p-4 rounded"
+                >
                   {item.name}
                 </li>
               );

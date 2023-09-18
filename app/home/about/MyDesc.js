@@ -1,5 +1,5 @@
 function Paragraph({ children }) {
-  return <p className={` mb-4 text-xl text-slate-400`}>{children}</p>;
+  return <p className={` mb-4 text-xl text-white`}>{children}</p>;
 }
 
 export default function MyDesc() {
