@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <header className="h-24 bg-color-secondary z-40 px-3  fixed w-full items-center ">
       <div className="container flex justify-between h-24">
-        <Link href="/#" className="flex justify-between gap-4 items-center ">
+        <Link href="/" className="flex justify-between gap-4 items-center ">
           <div className="relative">
             <h2 className="text-white text-3xl font-bold">Marcos Juvêncio</h2>
           </div>
@@ -32,7 +32,9 @@ export default function Header() {
                 <li key={navItem.title}>
                   <Link
                     className="text-white hover:text-orange-500 font-bold py-4 px-5 "
-                    href={navItem.path}
+                    href={
+                      navItem.path === "/#projetos" ? "/projetos" : navItem.path
+                    }
                     target={navItem.props ? navItem.props.target : ""}
                   >
                     {navItem.title}

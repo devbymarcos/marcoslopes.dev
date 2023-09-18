@@ -1,0 +1,18 @@
+.content {
+  color: var(--color-text-primary);
+  margin-bottom: 2rem;
+  background-color: var(--color-secondary);
+  padding: 1rem;
+  border-radius: var(--radius);
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.content ul li {
+  list-style: circle !important;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}

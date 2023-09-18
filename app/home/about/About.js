@@ -1,6 +1,4 @@
-import Skills from "./Skils";
 import MyDesc from "./MyDesc";
-import Image from "next/image";
 
 export default function About() {
   return (
