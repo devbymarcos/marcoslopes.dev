@@ -1,13 +1,29 @@
 import Link from "next/link";
 import { BlurHome } from "@/app/home/blur/blurHome";
+import { orbitron } from "../fonts";
+import RedesHome from "@/app/home/redes-home/RedesHome";
+
 export default function Home() {
   return (
     <>
-      <section className="pt-28  ">
+      <section className="flex flex-col h-screen-custom justify-center items-center  ">
         <BlurHome />
+        <div className="mb-12 text-white text-center">
+          <h1
+            className={`${orbitron.className} text-4xl md:text-6xl  font-bold`}
+          >
+            Programador Web
+          </h1>
+          <p className="text-2xl  my-4">Olá, me chamo Marcos </p>
+          <p className="text-lg  my-4">
+            Um desenvolvedor Web FullStack, criador de soluções computacionais
+            para web{" "}
+          </p>
+        </div>
+        <RedesHome />
         <div className="flex gap-3 items-center ">
           <Link
-            className="px-5 py-3 text-md border-2 transition-all inline-block border-color-purple rounded-full font-bold text-white hover:bg-color-purple uppercase"
+            className={` ${orbitron.className} px-5 py-3 text-md border-2 transition-all inline-block border-color-purple rounded-full font-bold text-white hover:bg-color-purple uppercase`}
             href="/#contato"
           >
             Mensagem

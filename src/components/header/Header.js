@@ -18,8 +18,8 @@ export default function Header() {
   }
 
   return (
-    <header className="h-24 bg-color-secondary z-40 px-3   w-full items-center ">
-      <div className="container flex justify-between h-24">
+    <header className="h-24 bg-color-secondary z-40 px-3    w-full items-center ">
+      <div className="container mx-auto flex justify-between h-24">
         <Link href="/" className="flex justify-between gap-4 items-center ">
           <div className="relative">
             <h2
