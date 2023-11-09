@@ -25,7 +25,7 @@ export async function getProjectsHome() {
 export async function getProjectsPage() {
   const query = gql`
     {
-      allProjects {
+      allProjects(orderBy: [name_ASC]) {
         name
         coverurl
         id

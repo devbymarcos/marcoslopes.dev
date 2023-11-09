@@ -94,7 +94,7 @@ export function Contact() {
     <>
       <Spinner active={loading} />
       <Alert alertObj={alertObj} />
-      <section id="contato" className="container pt-28 px-4">
+      <section id="contato" className="container my-28">
         <div className="w-full mb-16 text-left  text-white">
           <h2 className=" text-2xl mb-6 font-bold">CONTATO</h2>
           <p className="text-lg ">

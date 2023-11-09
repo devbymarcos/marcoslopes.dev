@@ -1,5 +1,4 @@
 "use client";
-import Btn from "@/components/buttons/Btn";
 
 const Navprojects = ({ content }) => {
   function filterElement(event) {

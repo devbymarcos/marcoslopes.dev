@@ -1,11 +1,14 @@
+import Avatar from "../avatar/Avatar";
+
 function Paragraph({ children }) {
-  return <p className={` mb-4 text-xl text-white`}>{children}</p>;
+  return <p className={` mb-4 text-base text-white`}>{children}</p>;
 }
 
 export default function MyDesc() {
   return (
     <>
       <article className="">
+        <Avatar />
         <Paragraph>
           Meu nome é Marcos lopes Juvêncio e sou um entusiasta de programação.
           Desde 2017, venho me dedicando ao mundo da desenvolvimento de
