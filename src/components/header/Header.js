@@ -23,7 +23,7 @@ export default function Header() {
         <Link href="/" className="flex justify-between gap-4 items-center ">
           <div className="relative">
             <h2
-              className={`${orbitron.className} bg-white p-2 rounded text-xl font-bold`}
+              className={`${orbitron.className} bg-white p-2 rounded text-md md:text-xl font-bold`}
             >
               Marcos Juvêncio
             </h2>
