@@ -16,7 +16,7 @@ const RedesHome = () => {
             />
           </svg>
         </a>
-        <a title="Youtube" href="/">
+        <a title="Youtube" href="https://www.youtube.com/@dbmcode/videos">
           <svg
             width="32"
             height="24"
@@ -58,7 +58,7 @@ const RedesHome = () => {
             />
           </svg>
         </a>
-        <a href="/">
+        <a href="https://github.com/devbymarcos">
           <svg
             width="28"
             height="28"

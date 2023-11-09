@@ -21,10 +21,7 @@ export default function Stacks() {
           <h1 className="text-2xl font-bold  mb-3">
             Ferramentas e Plataformas
           </h1>
-          <p>
-            Git,GitHub, Office 365 Management, WordPress, Linux OS, Insomnia,
-            Github, MYSQL
-          </p>
+          <p>Git,GitHub,Linux OS, Insomnia,VSCode,Railway Github, MYSQL</p>
         </article>
       </section>
     </>
