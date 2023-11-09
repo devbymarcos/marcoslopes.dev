@@ -1,22 +1,22 @@
 export const menuData = [
   {
-    title: "INÍCIO",
+    title: "Início",
     path: "/",
   },
   {
-    title: "SOBRE",
+    title: "Sobre",
     path: "/#sobre",
   },
   {
-    title: "TECNOLOGIAS",
+    title: "Tecnologias",
     path: "/#tecnologias",
   },
   {
-    title: "PROJETOS",
+    title: "Projetos",
     path: "/projetos",
   },
   {
-    title: "CONTATO",
+    title: "Contato",
     path: "/#contato",
   },
 ];
