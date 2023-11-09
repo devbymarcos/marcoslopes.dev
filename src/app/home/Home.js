@@ -1,4 +1,3 @@
-import { source, fira_mono } from "@/app/fonts";
 import Link from "next/link";
 import Nav from "@/components/menu/Nav";
 
@@ -8,13 +7,11 @@ export default function Home() {
       <section className=" md:fixed w-[400px]  px-2 gap-3 pt-16  ">
         <div className="  ">
           <h1
-            className={`text-white text-5xl md:text-[45px] font-black uppercase  ${source.className}`}
+            className={`text-white text-5xl md:text-[45px] font-black uppercase `}
           >
             Marcos Juvêncio
           </h1>
-          <p
-            className={`${source.className} text-white text-xl md:text-[20px]   my-6 leading-7`}
-          >
+          <p className={` text-white text-xl md:text-[20px]   my-6 leading-7`}>
             Um desenvolvedor JavaScript atualmente focado em{" "}
             <span className="text-color-purple font-bold  ">Front-end</span>,
             construindo o Frontend de sites e aplicativos da Web
