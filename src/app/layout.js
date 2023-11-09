@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
     <html lang="pt-Br">
       <body className={`${anonymousPro.className} h-screen bg-color-primary`}>
         <Header />
-        <div className="container mx-auto">{children}</div>
+        <div className="container mx-auto p-4">{children}</div>
         <Footer />
       </body>
     </html>

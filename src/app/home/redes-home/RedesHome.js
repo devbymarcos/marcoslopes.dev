@@ -2,7 +2,7 @@ const RedesHome = () => {
   return (
     <>
       <div className="py-4 px-4 rounded w-72 bg-white flex justify-between items-center gap-4 mb-12">
-        <a title="linkedIn" href="/">
+        <a title="linkedIn" href="https://www.linkedin.com/in/devbymarcos">
           <svg
             width="28"
             height="28"
@@ -16,7 +16,7 @@ const RedesHome = () => {
             />
           </svg>
         </a>
-        <a href="/">
+        <a title="Youtube" href="/">
           <svg
             width="32"
             height="24"
@@ -30,7 +30,7 @@ const RedesHome = () => {
             />
           </svg>
         </a>
-        <a title="Instagram" href="/">
+        <a title="Instagram" href="https://www.instagram.com/devbymarcos">
           <svg
             width="30"
             height="30"

@@ -30,7 +30,7 @@ export default function Home() {
           </Link>
           <a
             target="_blank"
-            className="px-5 py-3 text-md border-2 transition-all inline-block border-green-500 rounded-full font-bold text-white hover:bg-green-500 uppercase"
+            className={` ${orbitron.className} px-5 py-3 text-md border-2 transition-all inline-block border-green-500 rounded-full font-bold text-white hover:bg-green-500 uppercase`}
             href="https://api.whatsapp.com/send?phone=5541992169810&text=Tenho%20trabalho%20vamos%20conversar"
           >
             whatsapp

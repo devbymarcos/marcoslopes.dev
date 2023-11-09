@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Stacks() {
   return (
     <>
-      <section id="tecnologias" className=" h-auto md:h-screen  my-28  pt-28">
+      <section id="tecnologias" className="">
         <h1 className="mb-12 text-white uppercase text-2xl font-bold">
           Tecnologias
         </h1>

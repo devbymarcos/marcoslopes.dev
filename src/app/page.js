@@ -8,7 +8,6 @@ export default function PageIndex() {
     <>
       <Home />
       <About />
-      <Stacks />
       <Contact />
     </>
   );
