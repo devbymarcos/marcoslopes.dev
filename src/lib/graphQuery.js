@@ -1,4 +1,4 @@
-import { client } from "./graphClient";
+import { client } from "@/lib/graphClient";
 import { gql } from "graphql-request";
 
 export async function getProjectsHome() {
@@ -21,6 +21,7 @@ export async function getProjectsHome() {
   const response = await client.request(query);
   return response;
 }
+
 export async function getProjectsPage() {
   const query = gql`
     {
