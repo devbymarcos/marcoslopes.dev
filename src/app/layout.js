@@ -1,6 +1,6 @@
 import "./globals.css";
 
-import { source } from "@/app/fonts";
+import { anonymousPro } from "@/app/fonts";
 
 export const metadata = {
   title: "Marcos juvêncio | javascript developer",
@@ -25,7 +25,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-Br">
-      <body className={`${source.className} h-screen bg-color-primary`}>
+      <body className={`${anonymousPro.className} h-screen bg-color-primary`}>
         <div className="main">{children}</div>
       </body>
     </html>

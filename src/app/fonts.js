@@ -1,11 +1,11 @@
-import { Source_Sans_Pro, Fira_Mono } from "next/font/google";
+import { Anonymous_Pro, Orbitron } from "next/font/google";
 
-export const source = Source_Sans_Pro({
+export const anonymousPro = Anonymous_Pro({
   weight: ["400", "700"],
   subsets: ["latin"],
 });
 
-export const fira_mono = Fira_Mono({
+export const orbitron = Orbitron({
   weight: ["400", "700"],
   subsets: ["latin"],
 });
