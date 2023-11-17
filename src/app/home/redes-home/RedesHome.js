@@ -53,7 +53,7 @@ const RedesHome = () => {
               d="M23.25 6.75H23.265"
               stroke="white"
               strokeWidth="2"
-              stroke-linecap="round"
+              strokeLinecap="round"
               strokeLinejoin="round"
             />
           </svg>
