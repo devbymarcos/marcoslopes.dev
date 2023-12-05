@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -31,10 +32,15 @@ module.exports = {
         "frame-time": "time 1s linear",
       },
       colors: {
-        "color-primary": "#0F0F0F",
-        "color-secondary": "#1c1b1b",
-        "color-border": "#3C3C3C",
-        "color-purple": "#7843E9",
+        "primary-light": "#D7D7D7",
+        "secondary-light": "#FFFFFF",
+        "btn-primary": "#7843E9",
+        "btn-text": "#F3F3F3",
+        "primary-dark": "#000",
+        "secondary-dark": "#101010",
+        "input-color": "#BBBBBB",
+        "font-color": "#181818",
+        "font-color-dark": "#DEDEDE",
       },
     },
   },

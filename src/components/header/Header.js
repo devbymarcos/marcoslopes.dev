@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import MenuMobile from "../menu-mobile/MenuMobile";
 import BtnMobile from "../btn-mobile/BtnMobile";
 import { useState } from "react";
-import { orbitron } from "@/app/fonts";
+import Image from "next/image";
 
 export default function Header() {
   const pathname = usePathname();
@@ -18,16 +18,15 @@ export default function Header() {
   }
 
   return (
-    <header className="h-24 bg-color-secondary z-40 px-3    w-full items-center ">
-      <div className="container mx-auto flex justify-between h-24">
+    <header className="h-24 bg-secondary-light z-40 px-3    w-full items-center ">
+      <div className="container-custom  flex justify-between h-24">
         <Link href="/" className="flex justify-between gap-4 items-center ">
-          <div className="relative">
-            <h2
-              className={`${orbitron.className} bg-white p-2 rounded text-md md:text-xl font-bold`}
-            >
-              Marcos Juvêncio
-            </h2>
-          </div>
+          <Image
+            src="/images/logo-marcos-black.png"
+            alt="logo Marcos"
+            width={70}
+            height={22}
+          />
         </Link>
         <BtnMobile onClick={openMenuMobile} open={menuMobile} />
         <nav className="hidden md:block h-24">
@@ -36,7 +35,7 @@ export default function Header() {
               return (
                 <li key={nav.title}>
                   <Link
-                    className="text-white text-lg hover:text-orange-500 py-4 px-3 "
+                    className="text-font-color dark:text-font-color-dark   text-md hover:text-orange-500 py-4 px-2 font-bold "
                     href={nav.path}
                   >
                     {nav.title}

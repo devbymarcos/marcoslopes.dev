@@ -1,28 +1,34 @@
-import Image from "next/image";
+const skills = [
+  "HTML",
+  "CSS",
+  "Javascript",
+  "Python",
+  "flask-python",
+  "Node",
+  "Nextjs",
+  "Reacjs",
+  "PHP",
+  "Git",
+  "GitHub",
+  "TailwindCss",
+];
 
 export default function Stacks() {
   return (
     <>
       <section id="tecnologias" className="">
-        <h1 className="mb-12 text-white uppercase text-2xl font-bold">
+        <h1 className="mb-12 text-font-color dark:text-font-color-dark uppercase text-2xl font-bold">
           Tecnologias
         </h1>
-        <article className="text-white mb-12">
-          <h1 className="text-2xl font-bold  mb-3">
-            Linguagens de Programação
-          </h1>
-          <p>Javascript, Python, HTML, CSS</p>
-        </article>
-        <article className="text-white  mb-12">
-          <h1 className="text-2xl font-bold  mb-3">Bibliotecas e Frameworks</h1>
-          <p>React, NextJS, Flask, Node, Expressjs, Bootstrap, TailwindCSS</p>
-        </article>
-        <article className="text-white  mb-12">
-          <h1 className="text-2xl font-bold  mb-3">
-            Ferramentas e Plataformas
-          </h1>
-          <p>Git,GitHub,Linux OS, Insomnia,VSCode,Railway Github, MYSQL</p>
-        </article>
+        <div className="flex flex-wrap gap-4 items-center ">
+          {skills.map((item) => {
+            return (
+              <span className="p-4 bg-secondary-light dark:bg-secondary-dark text-font-color dark:text-font-color-dark rounded font-bold ">
+                {item}
+              </span>
+            );
+          })}
+        </div>
       </section>
     </>
   );

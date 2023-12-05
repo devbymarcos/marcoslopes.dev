@@ -45,4 +45,9 @@ li {
   .h-screen-custom {
     height: calc(100vh - 100px);
   }
+  .container-custom {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
 }
