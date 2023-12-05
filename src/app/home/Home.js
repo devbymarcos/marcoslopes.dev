@@ -8,16 +8,16 @@ import Mouse from "@/components/mouse/Mouse";
 export default function Home() {
   return (
     <>
-      <section className="h-screen-custom p-1 ">
+      <section className="md:h-screen-custom p-1 ">
         <BlurHome />
-        <div className="grid grid-cols-2 h-96 mt-40">
-          <div className="grid-item justify-self-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:h-96 mt-12 md:mt-40">
+          <div className="grid-item md:justify-self-center mb-12">
             <div className="mb-12 text-font-color dark:text-font-color-dark">
               <h1 className={` text-4xl md:text-3xl  font-bold`}>
                 Olá me chamo Marcos
               </h1>
 
-              <p className="text-lg  my-4 w-96">
+              <p className="text-lg  my-4 md:w-96">
                 Um desenvolvedor Web FullStack, criador de soluções
                 computacionais para web{" "}
               </p>
