@@ -5,12 +5,12 @@ export default function BtnMobile({ open = false, onClick }) {
     <>
       {open && (
         <button onClick={onClick} className="md:hidden">
-          <X color="#fff" size={32} />
+          <X color="#000" size={32} />
         </button>
       )}
       {!open && (
         <button onClick={onClick} className="md:hidden   ">
-          <Menu color="#fff" size={32} />
+          <Menu color="#000" size={32} />
         </button>
       )}
     </>

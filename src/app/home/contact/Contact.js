@@ -118,7 +118,7 @@ export function Contact() {
               </ul>
             </div>
           </div>
-          <form className="md:w-full mx-auto rounded border-t-2  bg-secondary-light p-10 flex flex-col">
+          <form className="md:w-full mx-auto rounded border-t-2  bg-secondary-light p-4 md:p-10 flex flex-col">
             <Input
               label="Nome"
               type="text"

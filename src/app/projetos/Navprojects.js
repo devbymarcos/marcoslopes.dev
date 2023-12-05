@@ -30,7 +30,7 @@ const Navprojects = ({ content }) => {
             return (
               <li key={item.name}>
                 <button
-                  className="bg-color-purple rounded-full px-4 py-2 text-lg text-white"
+                  className="bg-color-purple rounded-full px-4 py-2 text-lg text-font-color"
                   onClick={filterElement}
                 >
                   {item.name}

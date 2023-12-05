@@ -5,8 +5,9 @@ import { menuData } from "../../app/menu-data";
 import { usePathname } from "next/navigation";
 import MenuMobile from "../menu-mobile/MenuMobile";
 import BtnMobile from "../btn-mobile/BtnMobile";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
+import { Heart } from "lucide-react";
 
 export default function Header() {
   const pathname = usePathname();
@@ -17,9 +18,23 @@ export default function Header() {
     setMenuMobile(!menuMobile);
   }
 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      const scroll = window.scrollY;
+      const header = document.querySelector(".header-nav");
+      if (scroll > 100) {
+        header.classList.remove("py-8");
+        header.classList.add("py-3");
+      } else {
+        header.classList.remove("py-3");
+        header.classList.add("py-8");
+      }
+    });
+  });
+
   return (
-    <header className="h-24 bg-secondary-light z-40 px-3    w-full items-center ">
-      <div className="container-custom  flex justify-between h-24">
+    <header className="header-nav py-8 fixed top-0 transition-all bg-secondary-light z-40 px-3    w-full items-center ">
+      <div className="container-custom  flex justify-between ">
         <Link href="/" className="flex justify-between gap-4 items-center ">
           <Image
             src="/images/logo-marcos-black.png"
@@ -29,8 +44,8 @@ export default function Header() {
           />
         </Link>
         <BtnMobile onClick={openMenuMobile} open={menuMobile} />
-        <nav className="hidden md:block h-24">
-          <ul className="flex justify-center items-center h-24 gap-16">
+        <nav className="hidden md:block">
+          <ul className="flex justify-center items-center  gap-16">
             {menuData.map((nav) => {
               return (
                 <li key={nav.title}>

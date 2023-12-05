@@ -8,7 +8,7 @@ import Mouse from "@/components/mouse/Mouse";
 export default function Home() {
   return (
     <>
-      <section className="md:h-screen-custom p-1 ">
+      <section className="md:h-screen-custom p-1 mt-24 ">
         <BlurHome />
         <div className="grid grid-cols-1 md:grid-cols-2 md:h-96 mt-12 md:mt-40">
           <div className="grid-item md:justify-self-center mb-12">
