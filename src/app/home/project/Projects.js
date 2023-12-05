@@ -8,7 +8,7 @@ export default async function Project() {
   return (
     <>
       <section className="mb-12 container mx-auto">
-        <h1 className="text-white text-center mb-12 font-bold text-4xl">
+        <h1 className="text-font-color dark:text-font-color-dark text-center mb-12 font-bold text-4xl">
           Projetos
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
