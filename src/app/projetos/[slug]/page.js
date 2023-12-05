@@ -14,7 +14,9 @@ export default async function Project({ params }) {
   return (
     <>
       <section className="container pt-24 px-3">
-        <h1 className="text-white mt-12 mb-12 text-4xl">{data.project.name}</h1>
+        <h1 className="text-font-color dark:text-font-color-dark mt-12 mb-12 text-4xl">
+          {data.project.name}
+        </h1>
         <div className="w-full md:w-[900px] mb-12 relative h-[300px] md:h-[500px] ">
           <Image
             src={data.project.coverurl}
@@ -22,14 +24,14 @@ export default async function Project({ params }) {
             alt="igf mostrando o aplicativo"
           />
         </div>
-        <div className="text-white mb-12">
+        <div className="text-font-color dark:text-font-color-dark mb-12">
           <h2 className="text-4xl mb-4">Tecnologias utilizadas</h2>
           <ul className="flex  gap-2 ">
             {data.project.technology.map((item) => {
               return (
                 <li
                   key={item.id}
-                  className="bg-color-secondary inline-block p-4 rounded"
+                  className="p-4 bg-secondary-light dark:bg-secondary-dark text-font-color dark:text-font-color-dark rounded font-bold "
                 >
                   {item.name}
                 </li>

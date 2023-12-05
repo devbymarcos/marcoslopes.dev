@@ -4,7 +4,7 @@ import MyDesc from "./MyDesc";
 export default function About() {
   return (
     <>
-      <section id="sobre" className=" lg:h-screen-custom ">
+      <section id="sobre" className=" mb-24  ">
         <h1 className="mb-12 text-font-color dark:text-font-color-dark uppercase text-2xl font-bold">
           Sobre
         </h1>
