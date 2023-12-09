@@ -23,7 +23,10 @@ export default function Stacks() {
         <div className="flex flex-wrap gap-4 items-center ">
           {skills.map((item) => {
             return (
-              <span className="p-4 bg-secondary-light dark:bg-secondary-dark text-font-color dark:text-font-color-dark rounded font-bold ">
+              <span
+                key={item}
+                className="p-4 bg-secondary-light dark:bg-secondary-dark text-font-color dark:text-font-color-dark rounded font-bold "
+              >
                 {item}
               </span>
             );

@@ -23,6 +23,12 @@ export const metadata = {
     locale: "pt-BR",
     type: "website",
   },
+  twitter: {
+    card: "site",
+    title: "Escola programador",
+    description: "Aprendar a programar para web na prática",
+    images: ["https://devbymarcos.com.br/screenshot.png"],
+  },
 };
 export default function RootLayout({ children }) {
   return (
