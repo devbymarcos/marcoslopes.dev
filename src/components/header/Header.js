@@ -33,7 +33,7 @@ export default function Header() {
   });
 
   return (
-    <header className="header-nav py-8 fixed top-0 transition-all bg-secondary-light z-40 px-3    w-full items-center ">
+    <header className="header-nav py-8 fixed top-0 transition-all bg-secondary-light dark:bg-primary-dark z-40 px-3    w-full items-center dark:shadow-sm dark:shadow-neutral-500 dark:shad ">
       <div className="container-custom  flex justify-between ">
         <Link href="/" className="flex justify-between gap-4 items-center ">
           <Image
