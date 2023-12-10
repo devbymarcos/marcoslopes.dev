@@ -6,8 +6,7 @@ import { usePathname } from "next/navigation";
 import MenuMobile from "../menu-mobile/MenuMobile";
 import BtnMobile from "../btn-mobile/BtnMobile";
 import { useEffect, useState } from "react";
-import Image from "next/image";
-import { Heart } from "lucide-react";
+import { LogoSVG } from "../logo-svg/LogoSVG";
 
 export default function Header() {
   const pathname = usePathname();
@@ -36,12 +35,7 @@ export default function Header() {
     <header className="header-nav py-8 fixed top-0 transition-all bg-secondary-light dark:bg-primary-dark z-40 px-3    w-full items-center dark:shadow-sm dark:shadow-neutral-500 dark:shad ">
       <div className="container-custom  flex justify-between ">
         <Link href="/" className="flex justify-between gap-4 items-center ">
-          <Image
-            src="/images/logo-marcos-black.png"
-            alt="logo Marcos"
-            width={70}
-            height={22}
-          />
+          <LogoSVG color={"#fff"} width={70} height={22} />
         </Link>
         <BtnMobile onClick={openMenuMobile} open={menuMobile} />
         <nav className="hidden md:block">

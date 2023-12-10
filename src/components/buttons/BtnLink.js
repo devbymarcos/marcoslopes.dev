@@ -12,7 +12,7 @@ export default function BtnLink({ children, href, title, target }) {
   return (
     <>
       <Link
-        className="py-4 px-6 border-2 mt-3 border-color-purple bg-btn-primary text-white font-bold inline-block   rounded-md uppercase"
+        className="py-4 px-6  mt-3 border-color-purple bg-btn-primary text-white font-bold inline-block   rounded-md uppercase"
         href={href}
         target={target ? target : ""}
         title={title}
