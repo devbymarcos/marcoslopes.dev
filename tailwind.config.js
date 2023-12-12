@@ -32,7 +32,7 @@ module.exports = {
         "frame-time": "time 1s linear",
       },
       colors: {
-        "primary-light": "#D7D7D7",
+        "primary-light": "#fff",
         "secondary-light": "#FFFFFF",
         "btn-primary": "#7843E9",
         "btn-text": "#F3F3F3",
@@ -41,6 +41,8 @@ module.exports = {
         "input-color": "#BBBBBB",
         "font-color": "#181818",
         "font-color-dark": "#DEDEDE",
+        "blue-custom-dark": "#0F172A",
+        "blue-custom-light": "#556B8D",
       },
     },
   },
