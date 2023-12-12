@@ -19,14 +19,16 @@ export default function Header() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      const scroll = window.scrollY;
-      const header = document.querySelector(".header-nav");
-      if (scroll > 100) {
-        header.classList.remove("py-8");
-        header.classList.add("py-3");
-      } else {
-        header.classList.remove("py-3");
-        header.classList.add("py-8");
+      if (window.innerWidth > 769) {
+        const scroll = window.scrollY;
+        const header = document.querySelector(".header-nav");
+        if (scroll > 100) {
+          header.classList.remove("py-8");
+          header.classList.add("py-3");
+        } else {
+          header.classList.remove("py-3");
+          header.classList.add("py-8");
+        }
       }
     });
   });
@@ -44,7 +46,7 @@ export default function Header() {
               return (
                 <li key={nav.title}>
                   <Link
-                    className="text-font-color dark:text-font-color-dark   text-md hover:text-pink-custom py-4 px-2 font-bold uppercase "
+                    className="text-font-color dark:text-font-color-dark   text-sm hover:text-pink-custom py-4 px-2 font-bold uppercase "
                     href={nav.path}
                   >
                     {nav.title}
