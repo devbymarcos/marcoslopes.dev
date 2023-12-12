@@ -35,13 +35,13 @@ const Navprojects = ({ content }) => {
   return (
     <section className="my-20">
       <Spinner active={activeSpinner} />
-      <nav className="flex justify-center">
+      <nav className="flex ">
         <ul className="flex gap-3 flex-wrap">
           {content.allCategoryFilters.map((item) => {
             return (
               <li key={item.name}>
                 <button
-                  className="bg-btn-primary rounded-full px-4 py-2 text-lg text-white"
+                  className="bg-pink-custom  px-4 py-2 text-lg text-white"
                   onClick={filterElement}
                 >
                   {item.name}

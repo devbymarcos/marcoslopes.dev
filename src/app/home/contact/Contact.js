@@ -94,64 +94,64 @@ export function Contact() {
     <>
       <Spinner active={loading} />
       <Alert alertObj={alertObj} />
-      <section id="contato" className="container-custom my-28 scroll-mt-28">
-        <div className="w-full mb-16 text-center  text-font-color dark:text-font-color-dark">
-          <h2 className=" text-2xl mb-6 font-bold">CONTATO</h2>
-          <p className="text-lg ">
+      <section
+        id="contato"
+        className="container-custom my-28 md:grid  md:grid-cols-2 scroll-mt-28"
+      >
+        <div className="w-full mb-16  uppercase  text-font-color dark:text-font-color-dark">
+          <h2 className=" text-2xl mb-6 text-left font-bold">CONTATO</h2>
+          <p className="text-lg lowercase ">
             Sinta-se à vontade para entrar em contato comigo enviando o
             formulário abaixo, retornarei o mais breve possível
           </p>
-        </div>
-        <div className="flex  flex-col gap-20 w-full md:mx-auto md:w-[600px]">
-          <div>
-            <div className=" ">
-              <h3 className="text-font-color dark:text-font-color-dark text-xl mb-3 font-bold">
-                Dados de Contato
-              </h3>
-              <ul>
-                <li className="text-font-color dark:text-font-color-dark italic">
-                  Telefone : (41) - 992169810
-                </li>
-                <li className="text-font-color dark:text-font-color-dark italic">
-                  Email : marcoslopes.cwb@gmail.com
-                </li>
-              </ul>
-            </div>
+          <div className="mt-12">
+            <h3 className="text-font-color dark:text-font-color-dark text-xl mb-3 font-bold">
+              Dados de Contato
+            </h3>
+            <ul>
+              <li className="text-font-color dark:text-font-color-dark italic">
+                Telefone : (41) - 992169810
+              </li>
+              <li className="text-font-color dark:text-font-color-dark italic">
+                Email : marcoslopes.cwb@gmail.com
+              </li>
+            </ul>
           </div>
-          <form className="md:w-full mx-auto rounded border-t-2  bg-secondary-light dark:bg-secondary-dark p-4 md:p-10 flex flex-col">
-            <Input
-              label="Nome"
-              type="text"
-              value={name}
-              onChange={(e) => {
-                setName(e.target.value);
-              }}
-              classIf={borderStyleName}
-            />
-
-            <Input
-              label="Email"
-              type="email"
-              value={email}
-              onChange={(e) => {
-                setEmail(e.target.value);
-              }}
-              classIf={borderStyleEmail}
-            />
-            <TextArea
-              label="Menssagem"
-              onChange={(e) => {
-                setMessage(e.target.value);
-              }}
-              value={message}
-              classIf={borderStyleMessage}
-            />
-
-            <div>
-              <Btn onClick={postContact}>Enviar</Btn>
-            </div>
-          </form>
         </div>
+
+        <form className="md:w-full mx-auto rounded border-t-2  bg-secondary-light dark:bg-secondary-dark p-4 md:p-10 flex flex-col">
+          <Input
+            label="Nome"
+            type="text"
+            value={name}
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
+            classIf={borderStyleName}
+          />
+
+          <Input
+            label="Email"
+            type="email"
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+            classIf={borderStyleEmail}
+          />
+          <TextArea
+            label="Menssagem"
+            onChange={(e) => {
+              setMessage(e.target.value);
+            }}
+            value={message}
+            classIf={borderStyleMessage}
+          />
+
+          <div>
+            <Btn onClick={postContact}>Enviar</Btn>
+          </div>
+        </form>
       </section>
     </>
   );

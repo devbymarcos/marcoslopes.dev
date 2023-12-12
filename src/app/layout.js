@@ -32,7 +32,7 @@ export const metadata = {
 };
 export default function RootLayout({ children }) {
   return (
-    <html className="scroll-smooth" lang="pt-Br">
+    <html className="scroll-smooth dark" lang="pt-Br">
       <body
         className={`${montserrat.className} h-screen bg-primary-light dark:bg-primary-dark`}
       >

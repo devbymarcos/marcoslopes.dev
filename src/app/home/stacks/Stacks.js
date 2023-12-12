@@ -25,7 +25,7 @@ export default function Stacks() {
             return (
               <span
                 key={item}
-                className="p-4 bg-secondary-light dark:bg-secondary-dark text-font-color dark:text-font-color-dark rounded font-bold "
+                className="p-4 bg-secondary-light dark:bg-secondary-dark text-font-color dark:text-font-color-dark  font-bold "
               >
                 {item}
               </span>

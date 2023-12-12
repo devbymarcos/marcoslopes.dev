@@ -34,7 +34,7 @@ export async function getProjectsPage() {
           name
         }
       }
-      allCategoryFilters {
+      allCategoryFilters(orderBy: [name_ASC]) {
         name
       }
     }
