@@ -11,7 +11,7 @@ export default function Home() {
         <p className="text-sm mt-12">
           <span className="uppercase font-bold">Envie-me um email </span>:
           <a className="underline" href="mailto:marcoslopes.dev@gmial.com">
-            marcoslopes.dev@gmial.com
+            marcoslopes.dev@gmail.com
           </a>
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 md:h-96 md:mt-12">

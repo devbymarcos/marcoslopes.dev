@@ -27,7 +27,7 @@ module.exports = {
         },
       },
       animation: {
-        "up-down": "move 1.2s infinite",
+        "up-down": "move 2s infinite",
         "open-alert": "open 0.2s linear",
         "frame-time": "time 1s linear",
       },

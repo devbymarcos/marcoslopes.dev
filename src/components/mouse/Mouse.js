@@ -1,8 +1,23 @@
 export default function Mouse() {
   return (
     <>
-      <div className=" w-8 h-14 border-primary-dark dark:border-primary-light hidden md:block absolute bottom-10 left-[50%] -translate-x-[50%] border-2  rounded-full ">
-        <span className="w-2 h-2 block bg-primary-dark dark:bg-primary-light rounded-full absolute top-7 left-[9.9px] animate-up-down"></span>
+      <div className=" animate-up-down   hidden  absolute md:flex bottom-10 md:gap-2 left-[50%] -translate-x-[50%]  ">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-arrow-down"
+        >
+          <path d="M12 5v14" />
+          <path d="m19 12-7 7-7-7" />
+        </svg>
+        <span className="text-sm">SCROLL DOWN</span>
       </div>
     </>
   );
