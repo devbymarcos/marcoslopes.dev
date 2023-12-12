@@ -1,7 +1,7 @@
 import Header from "@/components/header/Header";
 import "./globals.css";
 
-import { anonymousPro } from "@/app/fonts";
+import { montserrat } from "@/app/fonts";
 import Footer from "@/components/footer/Footer";
 
 export const metadata = {
@@ -23,13 +23,21 @@ export const metadata = {
     locale: "pt-BR",
     type: "website",
   },
+  twitter: {
+    card: "site",
+    title: "Escola programador",
+    description: "Aprendar a programar para web na prática",
+    images: ["https://devbymarcos.com.br/screenshot.png"],
+  },
 };
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-Br">
-      <body className={`${anonymousPro.className} h-screen bg-color-primary`}>
+    <html className="scroll-smooth" lang="pt-Br">
+      <body
+        className={`${montserrat.className} h-screen bg-primary-light dark:bg-primary-dark`}
+      >
         <Header />
-        <div className="container mx-auto p-4">{children}</div>
+        <div className="container-custom px-4 ">{children}</div>
         <Footer />
       </body>
     </html>

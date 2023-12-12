@@ -8,10 +8,6 @@ export const menuData = [
     path: "/#sobre",
   },
   {
-    title: "Tecnologias",
-    path: "/#tecnologias",
-  },
-  {
     title: "Projetos",
     path: "/projetos",
   },
