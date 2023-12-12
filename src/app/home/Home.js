@@ -14,10 +14,10 @@ export default function Home() {
             marcoslopes.dev@gmail.com
           </a>
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 md:h-96 md:mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 mt-4 md:h-96 md:mt-12">
           <div className="grid-item md:justify-self-center mb-12">
             <div className="mb-12 text-font-color dark:text-font-color-dark">
-              <h1 className={` text-6xl uppercase md:text-3xl  font-bold`}>
+              <h1 className={` text-2xl  uppercase md:text-4xl  font-bold`}>
                 Olá, me chamo Marcos. desenvolvedor web Entusiasta em
                 desenvolvimento de Games
               </h1>
@@ -31,14 +31,14 @@ export default function Home() {
             <RedesHome />
             <div className="flex gap-3 items-center ">
               <Link
-                className={` px-6 py-3 text-md  transition-all inline-block   bg-btn-primary rounded-md text-white `}
+                className={` px-6 py-3 text-md  transition-all inline-block   bg-pink-custom  uppercase text-white `}
                 href="/#contato"
               >
                 Mensagem
               </Link>
               <a
                 target="_blank"
-                className={` px-6 py-3 text-md  transition-all inline-block   bg-green-800 rounded-md text-white `}
+                className={` px-6 py-3 text-md  transition-all inline-block    bg-green-500 uppercase text-white `}
                 href="https://api.whatsapp.com/send?phone=5541992169810&text=Tenho%20trabalho%20vamos%20conversar"
               >
                 Whatsapp

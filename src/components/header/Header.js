@@ -32,7 +32,7 @@ export default function Header() {
   });
 
   return (
-    <header className="header-nav py-8 fixed top-0 transition-all bg-secondary-light dark:bg-primary-dark z-40 px-3 border-b border-blue-custom-light   w-full items-center dark:shadow-sm dark:shadow-neutral-500 dark:shad ">
+    <header className="header-nav py-8 fixed top-0 transition-all bg-primary-light dark:bg-primary-dark z-40 px-3 border-b border-blue-custom-light   w-full items-center dark:shadow-sm dark:shadow-neutral-500 dark:shad ">
       <div className="container-custom  flex justify-between ">
         <Link href="/" className="flex justify-between gap-4 items-center ">
           <LogoSVG color={"#000"} width={70} height={22} />
@@ -44,7 +44,7 @@ export default function Header() {
               return (
                 <li key={nav.title}>
                   <Link
-                    className="text-font-color dark:text-font-color-dark   text-md hover:text-orange-500 py-4 px-2 font-bold "
+                    className="text-font-color dark:text-font-color-dark   text-md hover:text-pink-custom py-4 px-2 font-bold uppercase "
                     href={nav.path}
                   >
                     {nav.title}

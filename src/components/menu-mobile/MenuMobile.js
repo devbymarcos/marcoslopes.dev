@@ -12,7 +12,7 @@ export default function MenuMobile({ active, onClick }) {
               <li key={index}>
                 <Link
                   onClick={onClick}
-                  className="p-8 block hover:bg-color-secondary text-font-color dark:text-font-color-dark"
+                  className="p-8 block hover:bg-color-secondary font-bold hover:bg-pink-custom hover:text-font-color-dark text-font-color dark:text-font-color-dark"
                   href={item.path}
                 >
                   {item.title}
