@@ -16,7 +16,7 @@ export default async function Projetos() {
                 <Cardprojects
                   key={item.id}
                   title={item.name}
-                  urlImg={item.coverurl}
+                  urlImg={item.cover != null ? item.cover["url"] : ""}
                   alt={item.alt}
                   urlLink={`/projetos/${item.slug}`}
                   category={item.stackFilter.name}

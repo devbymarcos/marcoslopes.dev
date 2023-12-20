@@ -16,8 +16,9 @@ export default async function Project() {
             return (
               <Cardprojects
                 title={item.name}
-                urlImg={item.coverurl}
+                urlImg={item.cover != null ? item.cover.url : item.coverurl}
                 urlLink={`/projetos/${item.slug}`}
+                alt={item.name}
                 key={item.name}
               ></Cardprojects>
             );

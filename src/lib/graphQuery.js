@@ -15,6 +15,9 @@ export async function getProjectsHome() {
         technology {
           name
         }
+        cover {
+          url
+        }
       }
     }
   `;
@@ -25,13 +28,16 @@ export async function getProjectsHome() {
 export async function getProjectsPage() {
   const query = gql`
     {
-      allProjects(orderBy: [name_ASC]) {
+      allProjects(orderBy: [name_DESC]) {
         name
         coverurl
         id
         slug
         stackFilter {
           name
+        }
+        cover {
+          url
         }
       }
       allCategoryFilters(orderBy: [name_ASC]) {
@@ -47,7 +53,9 @@ export async function getProject(slug) {
     query Project($slug: String) {
       project(filter: { slug: { eq: $slug } }) {
         name
-        coverurl
+        cover {
+          url
+        }
         content(markdown: true)
         technology {
           name
@@ -61,6 +69,7 @@ export async function getProject(slug) {
   const variables = {
     slug: slug,
   };
+
   const response = await client.request(query, variables);
   return response;
 }

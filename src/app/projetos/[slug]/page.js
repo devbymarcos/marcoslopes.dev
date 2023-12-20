@@ -10,7 +10,7 @@ export const metadata = {
 
 export default async function Project({ params }) {
   const data = await getProject(params.slug);
-
+  console.log(data);
   return (
     <>
       <section className="container pt-24 px-3">
@@ -19,7 +19,7 @@ export default async function Project({ params }) {
         </h1>
         <div className="w-full md:w-[900px] mb-12 relative h-[300px] md:h-[500px] ">
           <Image
-            src={data.project.coverurl}
+            src={data.project.cover.url}
             fill
             alt="igf mostrando o aplicativo"
           />

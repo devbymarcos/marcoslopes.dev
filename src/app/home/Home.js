@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { BlurHome } from "@/app/home/blur/blurHome";
 import RedesHome from "@/app/home/redes-home/RedesHome";
 import Avatar from "./avatar/Avatar";
 import Mouse from "@/components/mouse/Mouse";
