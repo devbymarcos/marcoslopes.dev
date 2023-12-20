@@ -10,7 +10,7 @@ export const metadata = {
 
 export default async function Project({ params }) {
   const data = await getProject(params.slug);
-  console.log(data);
+
   return (
     <>
       <section className="container pt-24 px-3">
