@@ -10,7 +10,7 @@ const Cardprojects = ({ children, title, urlImg, alt, urlLink, category }) => {
         className={`filter-list transition-all `}
       >
         <div
-          className={`relative w-full h-[250px] mb-4 rounded-lg overflow-hidden`}
+          className={`relative aspect-video mb-4 rounded-lg overflow-hidden`}
         >
           <Image src={urlImg} alt={alt ? alt : "cover image"} fill />
         </div>
