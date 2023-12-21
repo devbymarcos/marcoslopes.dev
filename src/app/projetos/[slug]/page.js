@@ -19,9 +19,9 @@ export default async function Project({ params }) {
         </h1>
         <div className="w-full md:w-[900px] mb-12 relative h-[300px] md:h-[500px] ">
           <Image
-            src={data.project.cover.url}
+            src={data.project.cover != null ? data.project.cover.url : ""}
             fill
-            alt="igf mostrando o aplicativo"
+            alt="gif mostrando o aplicativo"
           />
         </div>
         <div className="text-font-color dark:text-font-color-dark mb-12">
