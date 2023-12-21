@@ -4,13 +4,12 @@ import { gql } from "graphql-request";
 export async function getProjectsHome() {
   const query = gql`
     {
-      allProjects(orderBy: [name_DESC], first: "3") {
+      allProjects(orderBy: [_createdAt_DESC], first: "3") {
         id
         name
         summaryContent
         techStack(markdown: false)
         content(markdown: true)
-        coverurl
         slug
         technology {
           name
