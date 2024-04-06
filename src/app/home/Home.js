@@ -30,14 +30,14 @@ export default function Home() {
             <RedesHome />
             <div className="flex gap-3 items-center ">
               <Link
-                className={` px-6 py-3 text-md  transition-all inline-block   bg-pink-custom  uppercase text-white `}
+                className={` px-6 py-3 text-md rounded-md  transition-all inline-block   bg-purple-500  font-bold  text-white `}
                 href="/#contato"
               >
                 Mensagem
               </Link>
               <a
                 target="_blank"
-                className={` px-6 py-3 text-md  transition-all inline-block    bg-green-500 uppercase text-white `}
+                className={` px-6 py-3 text-md rounded-md  transition-all inline-block    bg-purple-500 font-bold text-white `}
                 href="https://api.whatsapp.com/send?phone=5541992169810&text=Tenho%20trabalho%20vamos%20conversar"
               >
                 Whatsapp
