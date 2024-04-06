@@ -52,6 +52,7 @@ export async function getProject(slug) {
     query Project($slug: String) {
       project(filter: { slug: { eq: $slug } }) {
         name
+        summaryContent
         cover {
           url
         }
