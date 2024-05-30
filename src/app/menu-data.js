@@ -1,18 +1,18 @@
 export const menuData = [
   {
-    title: "Início",
+    title: ">_ início",
     path: "/",
   },
   {
-    title: "Sobre",
+    title: ">_ sobre",
     path: "/#sobre",
   },
   {
-    title: "Projetos",
+    title: ">_ projetos",
     path: "/projetos",
   },
   {
-    title: "Contato",
+    title: ">_ contato",
     path: "/#contato",
   },
 ];
