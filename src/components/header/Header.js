@@ -41,7 +41,7 @@ export default function Header() {
           className={`${firaCode.className} flex justify-between  gap-4 items-center md:w-[300px] font-bold text-xl text-blue-custom-light pl-8 `}
         >
           {/* <LogoSVG color={"#000"} width={70} height={22} /> */}
-          Marcos Lj
+          {"devbymarcos"}
         </Link>
         <BtnMobile onClick={openMenuMobile} open={menuMobile} />
         <nav className="hidden md:block">
