@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import MenuMobile from "../menu-mobile/MenuMobile";
 import BtnMobile from "../btn-mobile/BtnMobile";
 import { useEffect, useState } from "react";
-import { firaCode } from "@/app/fonts";
+import { firaCode, sourceCodePro } from "@/app/fonts";
 
 export default function Header() {
   const pathname = usePathname();
@@ -38,10 +38,10 @@ export default function Header() {
       <div className=" flex items-center  gap-10 container-custom  ">
         <Link
           href="/"
-          className={`${firaCode.className} flex justify-between  gap-4 items-center md:w-[300px] font-bold text-xl text-blue-custom-light pl-8 `}
+          className={`${sourceCodePro.className} flex justify-between  gap-4 items-center md:w-[300px]  text-2xl text-primary-light pl-8 `}
         >
           {/* <LogoSVG color={"#000"} width={70} height={22} /> */}
-          {"devbymarcos"}
+          {"devbymarcos(){}"}
         </Link>
         <BtnMobile onClick={openMenuMobile} open={menuMobile} />
         <nav className="hidden md:block">
