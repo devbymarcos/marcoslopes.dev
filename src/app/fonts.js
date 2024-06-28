@@ -1,4 +1,4 @@
-import { Montserrat, Fira_Code } from "next/font/google";
+import { Montserrat, Fira_Code, Source_Code_Pro } from "next/font/google";
 
 export const montserrat = Montserrat({
   weight: ["400", "700"],
@@ -6,6 +6,11 @@ export const montserrat = Montserrat({
 });
 
 export const firaCode = Fira_Code({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+});
+
+export const sourceCodePro = Source_Code_Pro({
   weight: ["400", "700"],
   subsets: ["latin"],
 });
