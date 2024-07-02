@@ -24,9 +24,9 @@ export default function Header() {
         const header = document.querySelector(".header-nav");
         if (scroll > 100) {
           header.classList.remove("py-12");
-          header.classList.add("py-3");
+          header.classList.add("py-6");
         } else {
-          header.classList.remove("py-3");
+          header.classList.remove("py-6");
           header.classList.add("py-12");
         }
       }
@@ -34,7 +34,7 @@ export default function Header() {
   });
 
   return (
-    <header className="header-nav  fixed top-0 transition-all bg-primary-light dark:bg-primary-dark z-40 px-3    w-full  items-center  py-12 ">
+    <header className="header-nav border-b border-gray-700  fixed top-0 transition-all bg-primary-light dark:bg-primary-dark z-40 px-3    w-full  items-center  py-12 ">
       <div className=" flex items-center  gap-10 container-custom  ">
         <Link
           href="/"
