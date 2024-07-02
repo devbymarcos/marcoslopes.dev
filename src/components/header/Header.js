@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import { menuData } from "../../app/menu-data";
 import { usePathname } from "next/navigation";
@@ -7,6 +6,7 @@ import MenuMobile from "../menu-mobile/MenuMobile";
 import BtnMobile from "../btn-mobile/BtnMobile";
 import { useEffect, useState } from "react";
 import { firaCode, sourceCodePro } from "@/app/fonts";
+import Image from "next/image";
 
 export default function Header() {
   const pathname = usePathname();
@@ -24,9 +24,9 @@ export default function Header() {
         const header = document.querySelector(".header-nav");
         if (scroll > 100) {
           header.classList.remove("py-12");
-          header.classList.add("py-3");
+          header.classList.add("py-6");
         } else {
-          header.classList.remove("py-3");
+          header.classList.remove("py-6");
           header.classList.add("py-12");
         }
       }
@@ -34,14 +34,18 @@ export default function Header() {
   });
 
   return (
-    <header className="header-nav  fixed top-0 transition-all bg-primary-light dark:bg-primary-dark z-40 px-3    w-full  items-center  py-12 ">
+    <header className="header-nav border-b border-gray-700  fixed top-0 transition-all bg-primary-light dark:bg-primary-dark z-40 px-3    w-full  items-center  py-12 ">
       <div className=" flex items-center  gap-10 container-custom  ">
         <Link
           href="/"
           className={`${sourceCodePro.className} flex justify-between  gap-4 items-center md:w-[300px]  text-2xl text-primary-light pl-8 `}
         >
-          {/* <LogoSVG color={"#000"} width={70} height={22} /> */}
-          {"devbymarcos(){}"}
+          <Image
+            src="/images/devbymarcos-white.png"
+            width={200}
+            height={22}
+            alt="Logo devbymarcos"
+          />
         </Link>
         <BtnMobile onClick={openMenuMobile} open={menuMobile} />
         <nav className="hidden md:block">

@@ -17,8 +17,7 @@ export default function Home() {
           <div className="grid-item md:justify-self-center mb-12">
             <div className="mb-12 text-font-color dark:text-font-color-dark">
               <h1 className={` text-2xl  uppercase md:text-4xl  font-bold`}>
-                Olá, me chamo Marcos. desenvolvedor web Entusiasta em
-                desenvolvimento de Games
+                Olá, me chamo Marcos. desenvolvedor web e mobile
               </h1>
 
               <p className="text-lg  my-4 md:w-96 font-semibold">
@@ -30,17 +29,17 @@ export default function Home() {
             <RedesHome />
             <div className="flex gap-3 items-center ">
               <Link
-                className={` px-6 py-3 text-md rounded-md  transition-all inline-block   bg-purple-500  font-bold  text-white `}
+                className={` min-w-[160px] px-6 py-3 text-md rounded-md  transition-all inline-block text-center    bg-gradient-to-r from-orange-custom to-pink-custom  font-bold  text-white `}
                 href="/#contato"
               >
-                Mensagem
+                Contato
               </Link>
               <a
                 target="_blank"
-                className={` px-6 py-3 text-md rounded-md  transition-all inline-block    bg-purple-500 font-bold text-white `}
+                className={` min-w-[160px] text-center px-6 py-3 text-md rounded-md  transition-all inline-block    bg-gradient-to-r from-orange-custom to-pink-custom font-bold text-white `}
                 href="https://api.whatsapp.com/send?phone=5541992169810&text=Tenho%20trabalho%20vamos%20conversar"
               >
-                Whatsapp
+                Quero aprender
               </a>
             </div>
           </div>

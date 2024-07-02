@@ -44,6 +44,8 @@ module.exports = {
         "blue-custom-dark": "#0F172A",
         "blue-custom-light": "#556B8D",
         "pink-custom": "#E11D48",
+        "orange-custom": "#FF610C",
+        "pink-custom": "#FF053F",
       },
     },
   },
