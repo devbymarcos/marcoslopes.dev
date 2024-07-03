@@ -5,7 +5,7 @@ export function Input({ label, type, value, onChange, place, classIf }) {
         {label}
       </label>
       <input
-        className={`w-full p-5 border-transparent outline-none bg-black text-white ${
+        className={`w-full p-5 border-transparent rounded-sm outline-none bg-black text-white ${
           classIf && classIf
         }`}
         onChange={onChange}
@@ -25,7 +25,7 @@ export function TextArea({ label, onChange, value, place, classIf }) {
           {label}
         </label>
         <textarea
-          className={` w-full p-5 border-transparent   outline-none bg-black text-white ${
+          className={` w-full p-5 border-transparent rounded-sm   outline-none bg-black text-white ${
             classIf && classIf
           }`}
           rows="5"

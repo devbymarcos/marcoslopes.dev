@@ -7,7 +7,7 @@ import { z } from "zod";
 import Btn from "@/components/buttons/Btn";
 import { Instagram, LinkedinIcon, Facebook } from "lucide-react";
 
-export function Contact() {
+export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -96,9 +96,9 @@ export function Contact() {
       <Alert alertObj={alertObj} />
       <section
         id="contato"
-        className="container-custom my-28 md:grid  md:grid-cols-2 scroll-mt-28"
+        className="container-custom my-28 md:grid  md:grid-cols-2 pt-60"
       >
-        <div className="w-full mb-16  uppercase  text-font-color dark:text-font-color-dark">
+        <div className="w-full mb-16    text-font-color dark:text-font-color-dark">
           <h2 className=" text-2xl mb-6 text-left font-bold">CONTATO</h2>
           <p className="text-lg lowercase ">
             Sinta-se à vontade para entrar em contato comigo enviando o
@@ -110,10 +110,10 @@ export function Contact() {
             </h3>
             <ul>
               <li className="text-font-color dark:text-font-color-dark italic">
-                Telefone : (41) - 992169810
+                Telefone : (41) 992169810
               </li>
               <li className="text-font-color dark:text-font-color-dark italic">
-                Email : marcoslopes.cwb@gmail.com
+                Email: marcoslopes.dev@gmail.com
               </li>
             </ul>
           </div>

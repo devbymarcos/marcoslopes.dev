@@ -13,6 +13,10 @@ export const menuData = [
   },
   {
     title: "contato",
-    path: "/#contato",
+    path: "/contato",
+  },
+  {
+    title: "cursos",
+    path: "/cursos",
   },
 ];

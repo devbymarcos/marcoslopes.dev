@@ -34,11 +34,11 @@ export default function Header() {
   });
 
   return (
-    <header className="header-nav border-b border-gray-700  fixed top-0 transition-all bg-primary-light dark:bg-primary-dark z-40 px-3    w-full  items-center  py-12 ">
-      <div className=" flex items-center  gap-10 container-custom  ">
+    <header className="header-nav border-b border-gray-700  fixed top-0 transition-all bg-primary-light dark:bg-primary-dark z-40 px-3 sm:px-0    w-full  items-center  py-12 ">
+      <div className=" flex gap-4 items-center justify-between px-3  md:px-0   container-custom  ">
         <Link
           href="/"
-          className={`${sourceCodePro.className} flex justify-between  gap-4 items-center md:w-[300px]  text-2xl text-primary-light pl-8 `}
+          className={`${sourceCodePro.className} flex justify-between   items-center   text-2xl text-primary-light `}
         >
           <Image
             src="/images/devbymarcos-white.png"
@@ -47,14 +47,13 @@ export default function Header() {
             alt="Logo devbymarcos"
           />
         </Link>
-        <BtnMobile onClick={openMenuMobile} open={menuMobile} />
-        <nav className="hidden md:block">
+        <nav className="hidden md:block justify-self-start">
           <ul className="flex justify-center items-center  ">
             {menuData.map((nav) => {
               return (
                 <li className=" " key={nav.title}>
                   <Link
-                    className={` ${firaCode.className} hover:text-font-color px-11 block   dark:text-font-color-dark   text-sm  `}
+                    className={` ${firaCode.className} hover:text-font-color px-8 block   dark:text-font-color-dark   text-sm  `}
                     href={nav.path}
                   >
                     {nav.title}
@@ -64,7 +63,15 @@ export default function Header() {
             })}
           </ul>
         </nav>
+        <BtnMobile onClick={openMenuMobile} open={menuMobile} />
         <MenuMobile active={menuMobile} onClick={openMenuMobile} />
+        <Link
+          href="https://hotmart.com/pt-br/club/dbmcode"
+          className="text-white"
+          target="_blank"
+        >
+          Login
+        </Link>
       </div>
     </header>
   );
