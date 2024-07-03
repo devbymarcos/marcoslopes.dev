@@ -8,7 +8,7 @@ export default function Mouse() {
           height="24"
           viewBox="0 0 24 24"
           fill="none"
-          stroke="currentColor"
+          stroke="#fff"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -16,7 +16,7 @@ export default function Mouse() {
           <path d="M12 5v14" />
           <path d="m19 12-7 7-7-7" />
         </svg>
-        <span className="text-sm">SCROLL DOWN</span>
+        <span className="text-sm text-white">SCROLL DOWN</span>
       </div>
     </>
   );
