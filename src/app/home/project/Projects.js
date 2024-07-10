@@ -15,7 +15,10 @@ export default async function Project() {
 
         {allProjects.map((item) => {
           return (
-            <div className=" grid gap-20 grid-cols-1 md:grid-cols-2 mb-20">
+            <div
+              key={item.name}
+              className=" grid gap-20 grid-cols-1 md:grid-cols-2 mb-20"
+            >
               <Image
                 src={item.cover.url}
                 width={609}
