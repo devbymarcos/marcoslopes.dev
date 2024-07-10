@@ -29,7 +29,7 @@ export default async function Project() {
                 <h2 className="text-white font-bold text-2xl text-center md:text-left">
                   {item.name}
                 </h2>
-                <div className="grid  grid-cols-1 text-center md:grid-cols-2 gap-10 font-bold text-white mt-4">
+                <div className="grid  grid-cols-1 text-center md:text-left md:grid-cols-2 gap-10 font-bold text-white mt-4">
                   <p>{item.text1}</p>
                   <p>{item.text2}</p>
                   <p>{item.text3}</p>
