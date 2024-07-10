@@ -17,6 +17,10 @@ export async function getProjectsHome() {
         cover {
           url
         }
+        text1
+        text2
+        text3
+        text4
       }
     }
   `;
