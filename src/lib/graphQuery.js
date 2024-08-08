@@ -4,7 +4,7 @@ import { gql } from "graphql-request";
 export async function getProjectsHome() {
   const query = gql`
     {
-      allProjects(orderBy: [_createdAt_DESC], first: "3") {
+      allProjects(orderBy: [_createdAt_DESC], first: "2") {
         id
         name
         summaryContent
