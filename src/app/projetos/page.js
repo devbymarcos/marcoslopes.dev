@@ -1,4 +1,4 @@
-import { getProjectsPage } from "@/lib/graphQuery";
+import { getProjectsPage } from "@/services/projects";
 import Navprojects from "./Navprojects";
 import Cardprojects from "@/components/card-projects/Cardprojects";
 
@@ -10,7 +10,7 @@ export default async function Projetos() {
       <div className="pt-28 container">
         <Navprojects content={data} />
         <section>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-11 px-2">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-20 px-2">
             {data.allProjects.map((item) => {
               return (
                 <Cardprojects

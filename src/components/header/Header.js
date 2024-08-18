@@ -67,7 +67,7 @@ export default function Header() {
         <MenuMobile active={menuMobile} onClick={openMenuMobile} />
         <Link
           href="https://hotmart.com/pt-br/club/dbmcode"
-          className="text-white"
+          className="text-white hidden md:block"
           target="_blank"
         >
           Login

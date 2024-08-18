@@ -19,4 +19,8 @@ export const menuData = [
     title: "cursos",
     path: "/cursos",
   },
+  {
+    title: "Login",
+    path: "https://hotmart.com/pt-br/club/dbmcode",
+  },
 ];

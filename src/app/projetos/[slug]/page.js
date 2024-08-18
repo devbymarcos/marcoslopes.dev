@@ -1,6 +1,6 @@
 import Image from "next/image";
 import BtnLinkFooterPage from "@/components/buttons/BtnLink";
-import { getProject } from "@/lib/graphQuery";
+import { getProject } from "@/services/projects";
 import style from "./style.module.css";
 
 export const metadata = {
