@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import MenuMobile from "../menu-mobile/MenuMobile";
 import BtnMobile from "../btn-mobile/BtnMobile";
 import { useEffect, useState } from "react";
-import { firaCode, sourceCodePro } from "@/app/fonts";
+import { firaCode, poppins } from "@/app/fonts";
 import Image from "next/image";
 
 export default function Header() {
@@ -34,18 +34,13 @@ export default function Header() {
   });
 
   return (
-    <header className="header-nav border-b border-gray-700  fixed top-0 transition-all bg-primary-light dark:bg-primary-dark z-40 px-3 sm:px-0    w-full  items-center  py-12 ">
+    <header className="header-nav   fixed top-0 transition-all bg-primary-light dark:bg-primary-dark z-40 px-3 sm:px-0    w-full  items-center  py-12 ">
       <div className=" flex gap-4 items-center justify-between px-3  md:px-0   container-custom  ">
         <Link
           href="/"
-          className={`${sourceCodePro.className} flex justify-between   items-center   text-2xl text-primary-light `}
+          className={`${poppins.className} flex justify-between   items-center   text-2xl text-primary-light `}
         >
-          <Image
-            src="/images/devbymarcos-white.png"
-            width={200}
-            height={22}
-            alt="Logo devbymarcos"
-          />
+          devbymarcos
         </Link>
         <nav className="hidden md:block justify-self-start">
           <ul className="flex justify-center items-center  ">
