@@ -4,23 +4,15 @@ export const menuData = [
     path: "/",
   },
   {
-    title: "sobre",
-    path: "/#sobre",
+    title: "Posts",
+    path: "/posts",
   },
   {
-    title: "projetos",
-    path: "/projetos",
+    title: "Aprenda",
+    path: "/aprenda",
   },
   {
-    title: "contato",
-    path: "/contato",
-  },
-  {
-    title: "cursos",
-    path: "/cursos",
-  },
-  {
-    title: "Login",
-    path: "https://hotmart.com/pt-br/club/dbmcode",
+    title: "Vamos Trabalhar",
+    path: "/vamos-trabalhar",
   },
 ];

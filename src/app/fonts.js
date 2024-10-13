@@ -3,6 +3,7 @@ import {
   Fira_Code,
   Source_Code_Pro,
   Poppins,
+  Varela_Round,
 } from "next/font/google";
 
 export const montserrat = Montserrat({
@@ -23,4 +24,9 @@ export const sourceCodePro = Source_Code_Pro({
 export const poppins = Poppins({
   weight: ["400", "700"],
   subsets: ["latin"],
+});
+
+export const varela = Varela_Round({
+  subsets: ["latin"],
+  weight: ["400"],
 });

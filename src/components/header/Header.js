@@ -38,7 +38,7 @@ export default function Header() {
       <div className=" flex gap-4 items-center justify-between px-3  md:px-0   container-custom  ">
         <Link
           href="/"
-          className={`${poppins.className} flex justify-between   items-center   text-2xl text-primary-light `}
+          className={`${poppins.className} flex justify-between   items-center pl-6   text-xl text-primary-light `}
         >
           devbymarcos
         </Link>
@@ -48,7 +48,7 @@ export default function Header() {
               return (
                 <li className=" " key={nav.title}>
                   <Link
-                    className={` ${firaCode.className} hover:text-font-color px-8 block   dark:text-font-color-dark   text-sm  `}
+                    className={` ${poppins.className} hover:text-font-color px-8 block   dark:text-font-color-dark   text-base  `}
                     href={nav.path}
                   >
                     {nav.title}
@@ -60,13 +60,6 @@ export default function Header() {
         </nav>
         <BtnMobile onClick={openMenuMobile} open={menuMobile} />
         <MenuMobile active={menuMobile} onClick={openMenuMobile} />
-        <Link
-          href="https://hotmart.com/pt-br/club/dbmcode"
-          className="text-white hidden md:block"
-          target="_blank"
-        >
-          Login
-        </Link>
       </div>
     </header>
   );
