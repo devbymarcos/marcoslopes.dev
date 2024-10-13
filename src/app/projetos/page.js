@@ -7,7 +7,7 @@ export default async function Projetos() {
 
   return (
     <>
-      <div className="pt-28 container">
+      <div className="pt-28 container-custom mx-auto">
         <Navprojects content={data} />
         <section>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-20 px-2">

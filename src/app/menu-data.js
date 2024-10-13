@@ -4,15 +4,24 @@ export const menuData = [
     path: "/",
   },
   {
-    title: "Posts",
-    path: "/posts",
+    title: "Sobre",
+    path: "/#sobre",
+  },
+  {
+    title: "Projetos",
+    path: "/projetos",
   },
   {
     title: "Aprenda",
-    path: "/aprenda",
+    path: "/cursos",
   },
   {
-    title: "Vamos Trabalhar",
-    path: "/vamos-trabalhar",
+    title: "Vamos Trabalhar !!",
+    path: "/contato",
+  },
+  {
+    title: "YouTube",
+    path: "https://www.youtube.com/@devbymarcos/videos",
+    target: "_blank",
   },
 ];

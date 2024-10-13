@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function BtnLink({ children, href, title, target }) {
   if (href == "#") {
     return (
-      <button className="py-4 px-6 border-2 mt-3 focus:outline-none bg-pink-custom text-white font-bold    uppercase">
+      <button className="py-2 px-2 border-2 mt-3 focus:outline-none bg-indigo-600 text-white font-bold    uppercase">
         {children}
       </button>
     );
@@ -12,7 +12,7 @@ export default function BtnLink({ children, href, title, target }) {
   return (
     <>
       <Link
-        className="min-w-[160px] text-center px-6 py-3 text-md rounded-md  transition-all inline-block    bg-gradient-to-r from-orange-custom to-pink-custom font-bold text-white "
+        className="text-center px-4 py-3 text-sm rounded-lg  transition-all inline-block    bg-indigo-600 font-bold text-white "
         href={href}
         target={target ? target : ""}
         title={title}

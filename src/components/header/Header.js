@@ -50,6 +50,7 @@ export default function Header() {
                   <Link
                     className={` ${poppins.className} hover:text-font-color px-8 block   dark:text-font-color-dark   text-base  `}
                     href={nav.path}
+                    target={nav.target}
                   >
                     {nav.title}
                   </Link>

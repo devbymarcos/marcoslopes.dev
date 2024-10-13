@@ -3,7 +3,7 @@ const Btn = ({ children, onClick }) => {
     <>
       <button
         onClick={onClick}
-        className={` py-4 px-6  bg-pink-custom rounded-lg text-white font-bold    uppercase`}
+        className={` py-3 px-6  bg-indigo-600 rounded-lg text-white font-bold    uppercase`}
       >
         {children}
       </button>

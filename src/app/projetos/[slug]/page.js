@@ -13,7 +13,7 @@ export default async function Project({ params }) {
 
   return (
     <>
-      <section className="container pt-24 px-3 ">
+      <section className="container-custom mx-auto pt-24 px-3 ">
         <h1 className="text-font-color text-center font-bold dark:text-font-color-dark mt-12 mb-12 text-2xl md:text-6xl">
           {data.project.name}
         </h1>
@@ -21,7 +21,7 @@ export default async function Project({ params }) {
           {data.project.summaryContent}
         </p>
       </section>
-      <section className="container pt-24 px-3">
+      <section className="container-custom mx-auto pt-24 px-3">
         <div className="w-full rounded-lg overflow-hidden mx-auto md:w-[900px] mb-12 relative h-[180px] sm:h-[350px] md:h-[500px] ">
           <Image
             src={data.project.cover != null ? data.project.cover.url : ""}
