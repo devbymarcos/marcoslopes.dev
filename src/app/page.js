@@ -6,8 +6,8 @@ export default function PageIndex() {
   return (
     <>
       <Home />
-      <About />
       <Project />
+      <About />
     </>
   );
 }

@@ -37,7 +37,7 @@ module.exports = {
         "btn-primary": "#7843E9",
         "btn-text": "#F3F3F3",
         "primary-dark": "#000",
-        "secondary-dark": "#101010",
+        "secondary-dark": "#171717",
         "input-color": "#BBBBBB",
         "font-color": "#0F172A",
         "font-color-dark": "#DEDEDE",

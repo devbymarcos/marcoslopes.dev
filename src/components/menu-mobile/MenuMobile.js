@@ -1,6 +1,6 @@
 import { menuData } from "@/app/menu-data";
 import Link from "next/link";
-import { firaCode } from "@/app/fonts";
+import { firaCode, poppins } from "@/app/fonts";
 
 export default function MenuMobile({ active, onClick }) {
   return (
@@ -16,7 +16,7 @@ export default function MenuMobile({ active, onClick }) {
               <li key={index}>
                 <Link
                   onClick={onClick}
-                  className={`${firaCode.className} p-8 block hover:bg-color-secondary  hover:bg-pink-custom hover:text-font-color-dark text-font-color dark:text-font-color-dark`}
+                  className={`${poppins.className} p-8 block hover:bg-color-secondary  hover:bg-zinc-800 hover:text-font-color-dark text-font-color dark:text-font-color-dark`}
                   href={item.path}
                 >
                   {item.title}

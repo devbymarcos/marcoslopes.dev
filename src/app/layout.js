@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
         className={`${montserrat.className} h-screen bg-primary-light dark:bg-primary-dark`}
       >
         <Header />
-        <div className="container-custom px-4 ">{children}</div>
+        {children}
         <Footer />
       </body>
     </html>
