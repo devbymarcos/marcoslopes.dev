@@ -11,7 +11,7 @@ export default function About() {
         <h1 className="mb-12 text-font-color dark:text-font-color-dark px-4  text-2xl font-bold">
           Sobre
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 overflow-hidden gap-12 px-4">
           <MyDesc />
           <Stacks />
         </div>
