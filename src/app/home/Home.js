@@ -1,14 +1,20 @@
+"use client";
 import Link from "next/link";
-import RedesHome from "@/app/home/redes-home/RedesHome";
 import Avatar from "./avatar/Avatar";
-import Mouse from "@/components/mouse/Mouse";
+
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
     <>
       <section className="md:h-screen-custom md:container-custom h-screen flex flex-col  justify-center p-1 pt-28 mb-24  ">
         <div className="grid grid-cols-1 order-0 md:grid-cols-2  md:h-96 md:mt-12">
-          <div className="grid-item  order-last md:order-1 md:justify-self-center mb-12">
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: "tween" }}
+            className="grid-item  order-last md:order-1 md:justify-self-center mb-12"
+          >
             <div className="mb-12 text-font-color dark:text-font-color-dark">
               <h1 className={` text-2xl   md:text-4xl  font-bold`}>
                 Oi eu sou Marcos !
@@ -34,10 +40,15 @@ export default function Home() {
                 Aprenda
               </a>
             </div>
-          </div>
-          <div className="grid-item md:order-last justify-self-center">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: "tween" }}
+            className="grid-item md:order-last justify-self-center"
+          >
             <Avatar />
-          </div>
+          </motion.div>
         </div>
       </section>
     </>
