@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 const skills = [
   { name: "HTML", urlImage: "/images/icons-stacks/html.svg" },
   { name: "CSS", urlImage: "/images/icons-stacks/css.svg" },
@@ -16,7 +17,12 @@ const skills = [
 export default function Stacks() {
   return (
     <>
-      <section id="tecnologias" className="">
+      <motion.section
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ type: "tween" }}
+        id="tecnologias"
+      >
         <h1 className="mb-12 text-font-color dark:text-font-color-dark uppercase text-2xl font-bold">
           Tecnologias
         </h1>
@@ -35,7 +41,7 @@ export default function Stacks() {
             );
           })}
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }

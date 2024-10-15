@@ -1,5 +1,4 @@
 import BtnLink from "@/components/buttons/BtnLink";
-import Cardprojects from "@/components/card-projects/Cardprojects";
 import { getProjectsHome } from "@/services/home";
 import Image from "next/image";
 

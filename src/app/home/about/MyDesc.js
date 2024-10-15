@@ -1,3 +1,6 @@
+"use client";
+import { motion } from "framer-motion";
+
 function Paragraph({ children }) {
   return (
     <p className={` mb-4 text-base text-font-color dark:text-font-color-dark`}>
@@ -9,7 +12,11 @@ function Paragraph({ children }) {
 export default function MyDesc() {
   return (
     <>
-      <article className="">
+      <motion.article
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ type: "tween" }}
+      >
         <Paragraph>
           Meu nome é Marcos lopes Juvêncio e sou um entusiasta de programação.
           Desde 2017, venho me dedicando ao mundo da desenvolvimento de
@@ -29,7 +36,7 @@ export default function MyDesc() {
           ReactJS, Next.js e Tailwind CSS, que me permitem criar interfaces
           modernas e responsivas de forma eficiente.
         </Paragraph>
-      </article>
+      </motion.article>
     </>
   );
 }
