@@ -18,23 +18,15 @@ export default function MyDesc() {
         transition={{ type: "tween" }}
       >
         <Paragraph>
-          Meu nome é Marcos lopes Juvêncio e sou um entusiasta de programação.
-          Desde 2017, venho me dedicando ao mundo da desenvolvimento de
-          software, mergulhando na empolgante jornada de transformar linhas de
-          código em soluções funcionais.
-        </Paragraph>
-        <Paragraph>
-          Minha jornada começou com PHP, HTML, CSS e JavaScript (com jQuery)
-          como minha pilha inicial. Através dessas tecnologias, adquiri um
-          sólido entendimento dos fundamentos da programação web e construí uma
-          base sólida para minha carreira.
-        </Paragraph>
-        <Paragraph>
-          À medida que o campo da programação evoluiu, decidi migrar minha pilha
-          tecnológica para JavaScript, explorando seu vasto ecossistema de
-          ferramentas e frameworks. Atualmente, concentro-me em trabalhar com
-          ReactJS, Next.js e Tailwind CSS, que me permitem criar interfaces
-          modernas e responsivas de forma eficiente.
+          Desde 2017, venho me dedicando ao desenvolvimento de software para a
+          web. Comecei com tecnologias básicas como HTML, CSS e JavaScript,
+          utilizando jQuery. Com o tempo, evoluí minhas habilidades e hoje
+          trabalho com linguagens e frameworks modernos como C#, TypeScript,
+          React Native e React com Next.js. Além de desenvolver, gosto de criar
+          conteúdo focado no ensino de programação e mantenho o canal
+          DevByMarcos no YouTube. Atualmente, também me dedico ao ensino
+          particular de programação, ajudando alunos a se aprofundarem nessa
+          área.
         </Paragraph>
       </motion.article>
     </>
