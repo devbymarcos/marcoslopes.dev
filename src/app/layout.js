@@ -1,6 +1,6 @@
 import Header from "@/components/header/Header";
 import "./globals.css";
-
+import { GoogleTagManager } from "@next/third-parties/google";
 import { montserrat } from "@/app/fonts";
 import Footer from "@/components/footer/Footer";
 
@@ -40,6 +40,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
       </body>
+      <GoogleTagManager gtmId="G-1ZNBJFK1RP" />
     </html>
   );
 }
