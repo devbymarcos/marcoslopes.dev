@@ -7,8 +7,11 @@ export default async function Project() {
 
   return (
     <>
-      <section className="mb-12 px-4 md:px-0 bg-secondary-dark">
-        <div className="md:w-[900px] w-full mx-auto py-6 md:py-40">
+      <section
+        id="projetos"
+        className="mb-12 px-4 md:px-0 bg-secondary-dark py-40"
+      >
+        <div className="md:w-[900px] w-full mx-auto py-6 ">
           {allProjects.map((item, index) => {
             return (
               <div
@@ -45,6 +48,9 @@ export default async function Project() {
               </div>
             );
           })}
+        </div>
+        <div className=" text-center  ">
+          <BtnLink href={`/projetos`}>Mais projetos</BtnLink>
         </div>
       </section>
     </>

@@ -9,7 +9,7 @@ export const menuData = [
   },
   {
     title: "Projetos",
-    path: "/projetos",
+    path: "/#projetos",
   },
   {
     title: "Aprenda",
