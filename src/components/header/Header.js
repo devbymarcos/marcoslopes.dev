@@ -40,7 +40,11 @@ export default function Header() {
           href="/"
           className={`${poppins.className} flex justify-between   items-center pl-6   text-xl text-primary-light `}
         >
-          devbymarcos
+          <Image
+            src={`/images/devbymarcos-white.png`}
+            width={160}
+            height={60}
+          />
         </Link>
         <nav className="hidden md:block justify-self-start">
           <ul className="flex justify-center items-center  ">

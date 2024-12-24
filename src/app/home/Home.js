@@ -20,8 +20,8 @@ export default function Home() {
                 Oi eu sou Marcos !
               </h1>
               <p className="text-lg  my-4 md:w-96 ">
-                Eu <span className="text-indigo-600">desenvolvo</span> soluções
-                para Web e sou entusiasta no desenvolvimento de games mobile.
+                Eu <span className="text-indigo-400">desenvolvo</span> soluções
+                para Web e sou entusiasta no desenvolvimento mobile.
               </p>
             </div>
 
