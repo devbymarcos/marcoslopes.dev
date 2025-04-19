@@ -11,7 +11,7 @@ const skills = [
   { name: "TYPESCRIPT", urlImage: "/images/icons-stacks/typescript.svg" },
   { name: "MYSQL", urlImage: "/images/icons-stacks/mysql.svg" },
   { name: "NEXTJS", urlImage: "/images/icons-stacks/nextjs.svg" },
-  { name: "REACT NATIVE", urlImage: "/images/icons-stacks/react.svg" },
+  { name: "JAVA", urlImage: "/images/icons-stacks/java-original.svg" },
 ];
 
 export default function Stacks() {

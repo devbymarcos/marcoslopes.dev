@@ -18,15 +18,21 @@ export default function MyDesc() {
         transition={{ type: "tween" }}
       >
         <Paragraph>
-          Desde 2017, venho me dedicando ao desenvolvimento de software para a
-          web. Comecei com tecnologias básicas como HTML, CSS e JavaScript,
-          utilizando jQuery. Com o tempo, evoluí minhas habilidades e hoje
-          trabalho com linguagens e frameworks modernos como C#, TypeScript,
-          React Native e React com Next.js. Além de desenvolver, gosto de criar
-          conteúdo focado no ensino de programação e mantenho o canal
-          DevByMarcos no YouTube. Atualmente, também me dedico ao ensino
-          particular de programação, ajudando alunos a se aprofundarem nessa
-          área.
+          Apaixonado por tecnologia, iniciei minha transição de carreira para a
+          área de TI em 2023, após experiências anteriores como analista
+          financeiro e empreendedor no setor de alimentação. Desde então, venho
+          me dedicando intensamente ao estudo e à prática do desenvolvimento de
+          software. Comecei aprendendo PHP, JavaScript, HTML e CSS, e hoje
+          minhas stacks favoritas incluem Next.js com React para o front-end e
+          Node.js e Java no back-end. Utilizo MySQL como banco de dados
+          principal, o que tem atendido bem às minhas necessidades em projetos
+          pessoais. Atualmente, atuo como desenvolvedor nas horas vagas e
+          trabalho como analista de aplicativo, prestando suporte a usuários,
+          realizando treinamentos e aplicando programação para automatizar e
+          otimizar rotinas internas. Meu principal objetivo é migrar totalmente
+          para o desenvolvimento de software e atuar profissionalmente como
+          desenvolvedor full-stack, contribuindo com soluções modernas e
+          escaláveis.
         </Paragraph>
       </motion.article>
     </>
